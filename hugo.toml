@@ -8,3 +8,5 @@ title = 'keel.me'
 [taxonomies]
     category = "categories"
     author = "authors"
+
+paginate = 2

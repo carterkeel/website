@@ -162,7 +162,7 @@ a {
 }
 
 .singleHeadTitle {
-  font-size: 48px;
+  font-size: 30px;
 }
 
 .singleHeadDesc {
@@ -194,6 +194,7 @@ a {
   flex: 1;
   max-height: 350px;
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .singleBottom {
@@ -257,6 +258,9 @@ a {
       padding-left: 10px;
       padding-right: 10px; 
     }
+    .singleHeadImg {
+      display: none;
+    }
 }
 
 @media (max-width:768px) {
@@ -267,8 +271,11 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 14px;
-}
+    font-size: 14px; 
+    }
+    .listItemImage {
+      display: none;
+    }
 }
 
 @media (max-width:640px) {

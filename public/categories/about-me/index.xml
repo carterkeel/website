@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Me on keel.me</title>
+    <link>http://localhost:1313/categories/about-me/</link>
+    <description>Recent content in About Me on keel.me</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Content Creation to Cybersecurity: The Journey of Carter Keel</title>
+      <link>http://localhost:1313/about_me/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about_me/</guid>
+      <description>Growing from content creation to cybersecurity.</description>
+    </item>
+  </channel>
+</rss>
