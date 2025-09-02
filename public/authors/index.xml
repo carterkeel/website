@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on keel.me</title>
+    <link>http://localhost:1313/authors/</link>
+    <description>Recent content in Authors on keel.me</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2025 22:48:51 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carter Keel</title>
+      <link>http://localhost:1313/authors/carter-keel/</link>
+      <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
+      <guid>http://localhost:1313/authors/carter-keel/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

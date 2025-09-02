@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carter Keel on keel.me</title>
+    <link>http://localhost:1313/authors/carter-keel/</link>
+    <description>Recent content in Carter Keel on keel.me</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2025 22:48:51 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/carter-keel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/test-post-copy-2/</link>
+      <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
+      <guid>http://localhost:1313/test-post-copy-2/</guid>
+      <description>&lt;p&gt;Test Content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/test-post-copy-3/</link>
+      <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
+      <guid>http://localhost:1313/test-post-copy-3/</guid>
+      <description>&lt;p&gt;Test Content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/test-post-copy-4/</link>
+      <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
+      <guid>http://localhost:1313/test-post-copy-4/</guid>
+      <description>&lt;p&gt;Test Content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/test-post-copy/</link>
+      <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
+      <guid>http://localhost:1313/test-post-copy/</guid>
+      <description>&lt;p&gt;Test Content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/test-post/</link>
+      <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
+      <guid>http://localhost:1313/test-post/</guid>
+      <description>&lt;p&gt;Test Content&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
