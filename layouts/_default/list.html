@@ -1,5 +1,20 @@
 {{ define "main" }}
 <div class="list">
-    Homepage
+    {{ range .Paginator.Pages  }}
+            <div class="listItem">
+                <img src={{ .Params.image }} alt={{.Title}} class="listItemsImage" loading="lazy">
+                <div class="listItemTexts">
+                    <h1 class="lisItemTitle">
+                        <a href={{.Permalink}}>{{ .Params.title }}</a>
+                    </h1>
+                    <p class="listItemDescription">{{ .Params.description }}</p>
+                    <div class="listItemDetail">
+                        <img src={{.Params.avatar}} loading="lazy" alt="">
+                        <span></span>
+                        <time>{{.Date}}</time>
+                    </div>
+                </div>
+            </div>
+    {{ end }}
 </div>
 {{ end }}

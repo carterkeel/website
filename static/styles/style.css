@@ -1,3 +1,143 @@
-.container {
-    background-color: red;
+:root{
+    --main-bg: #161a1dff;
+    --secondary-bg: #1d2327;
+    --red-4: #660708ff;
+    --red-3: #a4161aff;
+    --red-2: #ba181bff;
+    --red-1: #e5383bff;
+    --secondary-text: #b1a7a6ff;
+    --main-text: #d3d3d3ff;
+    --white-2: #f5f3f4ff;
+    --white: #ffffffff;
 }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--main-bg);
+    color: var(--main-text);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1266px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* NAVBAR START */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.searchButton {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   background-color: var(--secondary-bg);
+   padding: 5px;
+   border-radius: 10px;
+}
+
+/* NAVBAR END */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+/* ICON COLORS */
+.social svg {
+    color: var(--main-text);
+    fill: var(--main-text);
+}
+
+/* FOOTER START */
+
+
+
+/* FOOTER END */
+
+@media (max-width:1536px) {
+    .container {
+      max-width: 1366px;  
+    }
+}
+
+@media (max-width:1366px) {
+    .container {
+      max-width: 1280px;  
+    }
+}
+
+@media (max-width:1280px) {
+    .container {
+      max-width: 1024px;  
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+      max-width: 768px; 
+      padding-left: 10px;
+      padding-right: 10px; 
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+      max-width: 640px;  
+    }
+    .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+}
+
+@media (max-width:640px) {
+    .container {
+      max-width: 475px;  
+    }
+}
+
+
+
