@@ -83,17 +83,66 @@ a {
     gap: 10px;
 }
 
+/* FOOTER START */
+
 /* ICON COLORS */
 .social svg {
     color: var(--main-text);
     fill: var(--main-text);
 }
 
-/* FOOTER START */
-
-
-
 /* FOOTER END */
+
+/* LIST START */
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.listItemImage {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.listItemTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listItemDetail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.listItemAvatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.listItemCategories {
+    display: flex;
+    gap: 10px;
+}
+
+.listItemCategory {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+
+/* LIST END */
 
 @media (max-width:1536px) {
     .container {

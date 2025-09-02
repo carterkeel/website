@@ -24,6 +24,13 @@
     </item>
     <item>
       <title>Test Post</title>
+      <link>http://localhost:1313/test-post-copy-4/</link>
+      <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
+      <guid>http://localhost:1313/test-post-copy-4/</guid>
+      <description>&lt;p&gt;Test Content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Post</title>
       <link>http://localhost:1313/test-post-copy/</link>
       <pubDate>Mon, 01 Sep 2025 22:48:51 -0500</pubDate>
       <guid>http://localhost:1313/test-post-copy/</guid>
