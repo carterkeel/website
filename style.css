@@ -8,19 +8,18 @@
     --color-accent: #f472b6;
     --color-text: #f4f4f5;
     --color-muted: #52525b;
-
-    --overallPadding: 10rem;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     background: var(--color-bg);
     color: var(--color-text);
-    height: 100%;
     margin: 0;
 }
 
 .leftAndRight {
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0 auto;
     max-width: 1280px;
     display: flex;
@@ -38,16 +37,41 @@ body {
     max-height: 100vh;
     display: flex;
     flex-direction: column;
+    gap: 50px;
 }
 
 .social {
-    margin-top: auto;
+    display: flex;
+    gap: 20px;
 }
 
 .rightBar {
     padding-top: 50px;
+    padding-bottom: 50px;
     flex:1;
 }
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    
+}
+
+.leftBarInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 2rem; /* Example size, adjust as needed */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 
 
 
