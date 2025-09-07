@@ -117,10 +117,12 @@ body {
 
 .softwareList {
     display: flex;
+    color: var(--text-secondary);
 }
 
-.softwareList ul {
-    list-style: none;
+.highlightedText {
+    color: var(--text-highlighted);
+    font-weight: bold;
 }
 
 
