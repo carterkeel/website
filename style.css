@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
-    --color-bg: #18181b;
+    --color-bg: #0a0a0a;
     --color-surface: #23232a;
-    --color-primary: #6366f1;
-    --color-secondary: #a1a1aa;
-    --color-accent: #f472b6;
-    --color-text: #f4f4f5;
-    --color-muted: #52525b;
+    --text-primary: #e2e2e2;
+    --text-secondary: #a1a1aa;
+    --text-highlighted: #da7070;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     background: var(--color-bg);
-    color: var(--color-text);
+    color: var(--text-primary);
     margin: 0;
 }
 
@@ -32,31 +30,60 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
+.leftBarInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leftBar p {
+    margin: 0;
+    padding: 0;
+}
+
 .social {
     display: flex;
     gap: 20px;
+    fill: var(--text-highlighted)
 }
 
 .rightBar {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     flex:1;
 }
 
+.rightBar p {
+    margin: 0;
+    padding: 0;
+}
+
 .navLinks {
+    text-decoration: none;
+    background: none;
+    font: inherit;
+    color: inherit;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.navLinks a {
     text-decoration: none;
-    
+    color: var(--text-secondary);
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
 }
 
 .leftBarInfo {
@@ -64,11 +91,39 @@ body {
     flex-direction: column;
 }
 
-.heading {
-    font-size: 2rem; /* Example size, adjust as needed */
-    margin-top: 0;
-    margin-bottom: 0;
+.pfp {
+    width: 300px;
+    border-radius: 5%;
 }
+
+.heading {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.subHeading {
+    font-size: 30px;
+}
+
+.occupation {
+    width: 300px;
+    color: var(--text-secondary);
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.softwareList {
+    display: flex;
+}
+
+.softwareList ul {
+    list-style: none;
+}
+
+
 
 
 
