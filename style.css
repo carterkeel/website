@@ -110,10 +110,16 @@ body {
     color: var(--text-secondary);
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
 .skill {
     display: flex;
     flex-direction: column;
 }
+
 
 .softwareList {
     display: flex;
