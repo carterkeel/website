@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
-    --color-bg: #0a0a0a;
-    --color-bg-secondary: #23232a;
+    --color-bg: #0f0f0f;
+    --color-bg-secondary: #141414;
     --color-bg-tertiary: #2b2b31;
     --text-primary: #e2e2e2;
     --text-secondary: #a1a1aa;
-    --text-highlighted: #da7070;
+    --text-highlighted: #e63838;
+    --gradient-start: #d61717;
+    --gradient-end: #e711a7;
 }
 
 body {
@@ -17,7 +19,11 @@ body {
 }
 
 .gradientText {
-    
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;  /* clip the background to text */
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 html {
