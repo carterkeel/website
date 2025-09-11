@@ -3,6 +3,7 @@
 :root {
     --color-bg: #0a0a0a;
     --color-bg-secondary: #23232a;
+    --color-bg-tertiary: #2b2b31;
     --text-primary: #e2e2e2;
     --text-secondary: #a1a1aa;
     --text-highlighted: #da7070;
@@ -62,7 +63,15 @@ html {
 .social {
     display: flex;
     gap: 20px;
-    fill: var(--text-highlighted)
+    fill: var(--text-highlighted);
+}
+
+.social a svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social a:hover svg {
+  transform: scale(1.2);
 }
 
 .rightBar {
@@ -97,6 +106,19 @@ html {
     padding: 0;
     margin: 0;
     font: inherit;
+    transition: 
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.navLinks a:hover {
+    transform: translateX(20px);
+    color: var(--text-primary);
+}
+
+.navLinks a.active {
+  color: var(--text-primary);
+  transform: translateX(20px);
 }
 
 .leftBarInfo {
@@ -107,6 +129,7 @@ html {
 .pfp {
     width: 300px;
     border-radius: 50%;
+    border: solid 5px var(--text-highlighted);
 }
 
 .heading {
@@ -134,7 +157,7 @@ html {
 .skills {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 
 .skillsTitle {
@@ -148,6 +171,20 @@ html {
 .skill {
     display: flex;
     flex-direction: column;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: 
+    background 0.5s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease, 
+    transform 0.3s ease;
+}
+
+.skill:hover {
+    background: var(--color-bg-secondary);
+    border: solid 2px var(--color-bg-tertiary);
+    transform: translateY(-5px);
 }
 
 .softwareList {
@@ -165,7 +202,7 @@ html {
 .projectsContainer {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 
 .projectsTitle {
@@ -179,6 +216,29 @@ html {
 .projects {
     display: flex;
     gap: 20px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: 
+    background 0.5s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease, 
+    transform 0.3s ease;
+}
+
+.projects:hover {
+    background: var(--color-bg-secondary);
+    border: solid 2px var(--color-bg-tertiary);
+    transform: translateY(-5px);
+}
+
+
+.projects a svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.projects a:hover svg {
+  transform: scale(1.2);
 }
 
 .projectThumbnail {
@@ -282,6 +342,12 @@ html {
   gap: 15px;
   text-decoration: none;
   color: var(--text-highlighted);
+  transition:
+  transform 0.3s ease;
+}
+
+.resumeLink:hover {
+    transform: translateY(-5px);
 }
 
 .resumeLink svg {
@@ -292,6 +358,75 @@ html {
   font-weight: bold;
   font-size: 30px;
   margin: 0;
+}
+
+.contactTitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+.contactMeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.containerReadable {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea { 
+    padding: 0.75rem; 
+    border: 2px solid var(--color-bg-tertiary); 
+    background-color: var(--color-bg-secondary); 
+    color: var(--text-primary); 
+    border-radius: 6px; 
+    font-family: var(--font-ui);
+    resize: none;
+}
+
+.section-subtitle{
+    text-align: center;
+    padding: 30px;
+    color: var(--text-secondary);
+}
+
+.contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--text-highlighted);
+    color: var(--color-bg);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: var(--color-bg-tertiary);
+    outline: none;
+}
+
+.contact-form button:hover {
+    background-color: var(--text-highlighted);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -309,6 +444,10 @@ html {
     height: auto;
   }
 
+  .subHeading {
+    font-size: 20px;
+  }
+
   .leftBar {
     padding-top: 100px;
     text-align: center;
@@ -322,13 +461,13 @@ html {
   }
 
   .rightBar {
-    margin: 0;           /* remove any residual margin */
-    max-width: 100%;     /* take full width */
-    padding: 0;          /* optional: no extra padding if leftAndRight handles it */
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
     gap: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center contents */
+    align-items: center;
     
   }
 
