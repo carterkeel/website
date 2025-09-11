@@ -95,6 +95,7 @@ html {
 }
 
 .navLinks {
+    align-items: flex-start;
     text-decoration: none;
     background: none;
     font: inherit;
@@ -105,6 +106,8 @@ html {
 }
 
 .navLinks a {
+    display: inline-block;
+    align-self: flex-start;
     text-decoration: none;
     color: var(--text-secondary);
     background: none;
@@ -117,14 +120,22 @@ html {
     color 0.3s ease;
 }
 
-.navLinks a:hover {
-    transform: translateX(20px);
-    color: var(--text-primary);
-}
-
+/* Keep your existing active style */
 .navLinks a.active {
   color: var(--text-primary);
   transform: translateX(20px);
+}
+
+/* Hover style for all links */
+.navLinks a:hover {
+  color: var(--text-primary);
+  transform: translateX(20px);
+}
+
+/* Override active if *any* link is hovered */
+.navLinks:hover a.active:not(:hover) {
+  color: var(--text-secondary);
+  transform: translateX(0); /* reset active animation */
 }
 
 .leftBarInfo {
@@ -378,7 +389,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-bottom: 350px;
+    padding-bottom: 300px;
 }
 
 .containerReadable {

@@ -213,7 +213,7 @@
                             <span class="gradientText">Contact</span>
                         </p>
                     </div> 
-                    <p class="section-subtitle">I am open for any opportunities.</p>
+                    <p class="section-subtitle">I am open for opportunities.</p>
                     <div class="container-readable">
                         <form class="contact-form" action="https://formspree.io/f/mldwzvgk" method="POST">
                         <input type="text" name="name" placeholder="Your Name" required>
@@ -225,5 +225,35 @@
                 </section>
             </div>
         </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section"); 
+        const navLinks = document.querySelectorAll(".navLinks a");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+            entries.forEach((entry) => {
+                const id = entry.target.getAttribute("id");
+
+                if (entry.isIntersecting) {
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === `#${id}`) {
+                    link.classList.add("active");
+                    }
+                });
+                }
+            });
+            },
+            {
+            threshold: 0.6, // section must be at least 60% visible to trigger
+            }
+        );
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+        });
+        </script>
     </body>
 </html>
