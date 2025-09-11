@@ -378,7 +378,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 350px;
 }
 
 .containerReadable {
