@@ -52,7 +52,7 @@ html {
     max-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 .leftBarInfo {
