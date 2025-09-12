@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL VARIABLES & RESET
+   ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
@@ -11,6 +14,8 @@
     --gradient-end: #e711a7;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
     font-family: 'Inter', sans-serif;
     background: var(--color-bg);
@@ -18,41 +23,48 @@ body {
     margin: 0;
 }
 
+/* =========================
+   GLOBAL UTILITIES
+   ========================= */
 .gradientText {
     background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
-    -webkit-background-clip: text;  /* clip the background to text */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
 }
 
-html {
-    scroll-behavior: smooth;
+.highlightedText {
+    color: var(--text-highlighted);
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
 }
 
+/* =========================
+   LAYOUT
+   ========================= */
 .leftAndRight {
-    align-items: flex-start;
-    min-height: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
-    max-width: 1280px;
     display: flex;
-    gap: 2rem;
     justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 0 50px;
 }
 
+/* ----- Left Sidebar ----- */
 .leftBar {
-    flex:1;
+    flex: 1;
     position: sticky;
     top: 0;
     z-index: 10;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 100px 0;
+    max-height: 100vh;
 }
 
 .leftBarInfo {
@@ -61,45 +73,20 @@ html {
     gap: 30px;
 }
 
-.leftBar p {
-    margin: 0;
-    padding: 0;
+.leftBar p { margin: 0; padding: 0; }
+
+.pfp {
+    width: 300px;
+    border-radius: 50%;
+    border: solid 5px var(--text-highlighted);
 }
 
-.social {
-    display: flex;
-    gap: 20px;
-    fill: var(--text-highlighted);
-}
+.heading { font-size: 65px; font-weight: bold; }
+.subHeading { font-size: 30px; }
+.occupation { width: 300px; color: var(--text-secondary); }
 
-.social a svg {
-  transition: transform 0.2s ease-in-out;
-}
-
-.social a:hover svg {
-  transform: scale(1.2);
-}
-
-.rightBar {
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    flex:1;
-    max-width: 50%;
-    gap: 100px;
-}
-
-.rightBar p {
-    margin: 0;
-    padding: 0;
-}
-
+/* ----- Navigation Links ----- */
 .navLinks {
-    align-items: flex-start;
-    text-decoration: none;
-    background: none;
-    font: inherit;
-    color: inherit;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -110,77 +97,52 @@ html {
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-secondary);
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    transition: 
-    transform 0.3s ease,
-    color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Keep your existing active style */
-.navLinks a.active {
-  color: var(--text-primary);
-  transform: translateX(20px);
-}
-
-/* Hover style for all links */
+.navLinks a.active,
 .navLinks a:hover {
-  color: var(--text-primary);
-  transform: translateX(20px);
+    color: var(--text-primary);
+    transform: translateX(20px);
 }
 
-/* Override active if *any* link is hovered */
 .navLinks:hover a.active:not(:hover) {
-  color: var(--text-secondary);
-  transform: translateX(0); /* reset active animation */
-}
-
-.leftBarInfo {
-    display: flex;
-    flex-direction: column;
-}
-
-.pfp {
-    width: 300px;
-    border-radius: 50%;
-    border: solid 5px var(--text-highlighted);
-}
-
-.heading {
-    font-size: 65px;
-    font-weight: bold;
-}
-
-.subHeading {
-    font-size: 30px;
-}
-
-.occupation {
-    width: 300px;
     color: var(--text-secondary);
+    transform: translateX(0);
 }
 
-.categories {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 60px;
-    padding: 0;
-    text-align: center;
+/* ----- Social Links ----- */
+.social {
+    display: flex;
+    gap: 20px;
+    fill: var(--text-highlighted);
 }
 
-.skills {
+.social a svg { transition: transform 0.2s ease-in-out; }
+.social a:hover svg { transform: scale(1.2); }
+
+/* ----- Right Content ----- */
+.rightBar {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 100px;
+    max-width: 50%;
+    padding-bottom: 100px;
 }
 
+.rightBar p { margin: 0; padding: 0; }
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+/* --- Skills Section --- */
+.skills { display: flex; flex-direction: column; gap: 60px; }
 .skillsTitle {
     padding-top: 100px;
-    font-weight: bold;
     font-size: 60px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
@@ -191,237 +153,124 @@ html {
     padding: 12px;
     border-radius: 8px;
     border: 2px solid transparent;
-    transition: 
-    background 0.5s ease,
-    transform 0.3s ease,
-    border-color 0.3s ease, 
-    transform 0.3s ease;
+    transition: background 0.5s ease, transform 0.3s ease, border-color 0.3s ease;
 }
-
 .skill:hover {
     background: var(--color-bg-secondary);
     border: solid 2px var(--color-bg-tertiary);
     transform: translateY(-5px);
 }
+.softwareList { display: flex; color: var(--text-secondary); }
 
-.softwareList {
-    display: flex;
-    color: var(--text-secondary);
-}
-
-.highlightedText {
-    color: var(--text-highlighted);
-    font-weight: bold;
-    font-size: 25px;
-    text-transform: capitalize;
-}
-
-.projectsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
+/* --- Projects Section --- */
+.projectsContainer { display: flex; flex-direction: column; gap: 60px; }
 .projectsTitle {
+    padding-top: 100px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
-    font-size: 60px;
-    padding-top: 100px;
     text-transform: uppercase;
 }
 
 .projects {
     display: flex;
     gap: 20px;
+    padding: 10px;
     border-radius: 8px;
     border: 2px solid transparent;
-    padding: 10px;
-    transition: 
-    background 0.5s ease,
-    transform 0.3s ease,
-    border-color 0.3s ease, 
-    transform 0.3s ease;
+    transition: background 0.5s ease, transform 0.3s ease, border-color 0.3s ease;
 }
-
 .projects:hover {
     background: var(--color-bg-secondary);
     border: solid 2px var(--color-bg-tertiary);
     transform: translateY(-5px);
 }
 
+.projects a svg { transition: transform 0.2s ease-in-out; }
+.projects a:hover svg { transform: scale(1.2); }
 
-.projects a svg {
-  transition: transform 0.2s ease-in-out;
-}
+.projectThumbnail { width: 300px; border-radius: 10px; display: block; }
+.projectTitle { font-size: 18px; font-weight: bold; }
+.projectInfo { color: var(--text-secondary); }
+.projectDetails { display: flex; flex-direction: column; gap: 15px; justify-content: center; }
+.projectLinks { display: flex; gap: 15px; fill: var(--text-highlighted); }
 
-.projects a:hover svg {
-  transform: scale(1.2);
-}
-
-.projectThumbnail {
-    width: 300px;
-    display: block;
-    border-radius: 10px;
-}
-
-.projectTitle {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.projectInfo {
-    color: var(--text-secondary);
-}
-
-.projectDetails {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-}
-
-.projectLinks {
-    display: flex;
-    gap: 15px;
-    fill: var(--text-highlighted);
-    color: var(--text-highlighted);
-}
-
-.experienceContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-.experienceContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
+/* --- Experience Section --- */
+.experienceContainer { display: flex; flex-direction: column; gap: 60px; }
 .experienceTitle {
     padding-top: 100px;
-    font-weight: bold;
     font-size: 60px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.employment {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border-left: 5px solid var(--text-highlighted);
-    padding-left: 50px;
-}
-
-.employmentTime {
-    text-align: right;
-    color: var(--text-secondary);
-}
-
-.employmentTitle {
     font-weight: bold;
-    padding-bottom: 50px;
-    font-size: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 
+.employment,
 .education {
     display: flex;
     flex-direction: column;
     gap: 30px;
     border-left: 5px solid var(--text-highlighted);
     padding-left: 50px;
-
 }
 
-.educationPlace {
-    color: var(--text-secondary);
-}
-
+.employmentTitle,
 .educationTitle {
-    font-weight: bold;
-    padding-bottom: 50px;
     font-size: 20px;
-    text-align: center;
-}
-
-.resumeContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resumeLink {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  text-decoration: none;
-  color: var(--text-highlighted);
-  transition:
-  transform 0.3s ease;
-}
-
-.resumeLink:hover {
-    transform: translateY(-5px);
-}
-
-.resumeLink svg {
-  fill: var(--text-highlighted);
-}
-
-.resumeLink p {
-  font-weight: bold;
-  font-size: 30px;
-  margin: 0;
-}
-
-.contactTitle {
     font-weight: bold;
     text-align: center;
-    font-size: 60px;
+    padding-bottom: 50px;
+}
+.employmentTime { text-align: right; color: var(--text-secondary); }
+.educationPlace { color: var(--text-secondary); }
+
+/* --- Resume Section --- */
+.resumeContainer { display: flex; justify-content: center; align-items: center; }
+.resumeLink {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--text-highlighted);
+    transition: transform 0.3s ease;
+}
+.resumeLink:hover { transform: translateY(-5px); }
+.resumeLink svg { fill: var(--text-highlighted); }
+.resumeLink p { font-size: 30px; font-weight: bold; margin: 0; }
+
+/* --- Contact Section --- */
+.contactMeContainer { display: flex; flex-direction: column; gap: 50px; padding-bottom: 300px; }
+.contactTitle {
     padding-top: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
 }
 
-.contactMeContainer {
+.section-subtitle { text-align: center; padding: 30px; color: var(--text-secondary); }
+
+.contact-form {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding-bottom: 300px;
-}
-
-.containerReadable {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.contact-form { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 1rem; 
-    max-width: 600px; 
+    gap: 1rem;
+    max-width: 600px;
     margin: 0 auto;
 }
-
-.contact-form input, .contact-form textarea { 
-    padding: 0.75rem; 
-    border: 2px solid var(--color-bg-tertiary); 
-    background-color: var(--color-bg-secondary); 
-    color: var(--text-primary); 
-    border-radius: 6px; 
-    font-family: var(--font-ui);
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 2px solid var(--color-bg-tertiary);
+    background-color: var(--color-bg-secondary);
+    color: var(--text-primary);
+    border-radius: 6px;
     resize: none;
 }
-
-.section-subtitle{
-    text-align: center;
-    padding: 30px;
-    color: var(--text-secondary);
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: var(--color-bg-tertiary);
+    outline: none;
 }
-
 .contact-form button {
     padding: 0.75rem 1.5rem;
     background-color: var(--text-highlighted);
@@ -430,40 +279,55 @@ html {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     transition: background 0.3s ease, transform 0.2s ease;
 }
+.contact-form button:hover { transform: translateY(-2px); }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    background-color: var(--color-bg-tertiary);
-    outline: none;
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+/* Laptops 1280px → 769px */
+@media (max-width: 1280px) and (min-width: 769px) {
+    .leftAndRight {
+        justify-content: center;
+        max-width: 1100px;
+        padding: 0 20px;
+        gap: 2rem;
+    }
+    .leftBar, .rightBar { flex: 1; max-width: 50%; }
+    .pfp { width: 200px; }
+    .heading { font-size: 50px; }
+    .subHeading { font-size: 22px; }
+    .occupation { display: none; }
+    .skillsTitle,
+    .projectsTitle,
+    .experienceTitle,
+    .contactTitle { font-size: 35px; padding-top: 20px; }
+    .leftBar { padding-top: 50px; }
+    .projects img { width: 250px; }
+    .projectsContainer,
+    .skills { gap: 15px; }
 }
 
-.contact-form button:hover {
-    background-color: var(--text-highlighted);
-    transform: translateY(-2px);
-}
-
+/* Mobile ≤768px */
 @media (max-width: 768px) {
   .leftAndRight {
     flex-direction: column;
-    padding-left: 20px;   /* reduce horizontal padding for mobile */
-    padding-right: 20px;  /* reduce horizontal padding for mobile */
-    gap: 40px;            /* smaller gap between leftBar & rightBar */
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 40px;
   }
 
   .pfp {
-    display: block;        /* <img> is inline by default */
-    margin: 0 auto;        /* auto margins center it */
-    max-width: 100%;       /* keeps it responsive */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
   }
 
-  .subHeading {
-    font-size: 20px;
-  }
+  .subHeading { font-size: 20px; }
 
   .leftBar {
     padding-top: 100px;
@@ -485,7 +349,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
   .projects {
@@ -499,20 +362,8 @@ html {
     justify-content: center;
   }
 
-  .heading {
-    font-size: 40px;
-  
-  }
-
-  .skillsTitle {
-    font-size: 40px;
-  }
-
-  .projectsTitle {
-    font-size: 40px;
-  }
-
-  .experienceTitle {
-    font-size: 40px;
-  }
+  .heading { font-size: 40px; }
+  .skillsTitle,
+  .projectsTitle,
+  .experienceTitle { font-size: 40px; }
 }
