@@ -265,6 +265,7 @@ body {
     color: var(--text-primary);
     border-radius: 6px;
     resize: none;
+    font-family: inherit;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -281,6 +282,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s ease, transform 0.2s ease;
+    font-family: inherit;
 }
 .contact-form button:hover { transform: translateY(-2px); }
 
