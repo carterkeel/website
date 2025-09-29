@@ -313,6 +313,33 @@ body {
     .skills { gap: 15px; }
 }
 
+.blog {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog hr {
+    width: 100%;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)) 1;
+    border-radius: 2px;
+}
+
+.blog img {
+    border-radius: 15px;
+}
+
+.blog a {
+    color: var(--text-highlighted);
+}
+
+.cardPreview {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Mobile ≤768px */
 @media (max-width: 768px) {
   .leftAndRight {
