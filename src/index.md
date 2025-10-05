@@ -167,3 +167,13 @@ layout: page
                         </a>
                     </div>
                 </section>
+                <section class="postsContainer">
+                    <div class="postsTitle">
+                        <p>
+                            <span class="gradientText">Posts</span>
+                        </p>
+                    </div>
+                    <div class="posts">
+                        {{ define(posts, take(sort_by(dir("posts"), post, front(post, date)), 3)) join(map(posts, post, apply_layout(post, "card"))) }}
+                    </div>
+                </section>

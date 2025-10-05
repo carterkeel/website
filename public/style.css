@@ -63,7 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 100px 0;
+    padding: 50px 0;
     max-height: 100vh;
 }
 
@@ -140,7 +140,7 @@ body {
 /* --- Skills Section --- */
 .skills { display: flex; flex-direction: column; gap: 60px; }
 .skillsTitle {
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
@@ -238,6 +238,18 @@ body {
 .resumeLink svg { fill: var(--text-highlighted); }
 .resumeLink p { font-size: 30px; font-weight: bold; margin: 0; }
 
+/* --- Recent Posts --- */
+.postsTitle {
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.posts {display: flex; flex-direction: column; gap: 60px; }
+
+.postsContainer {display: flex; flex-direction: column; gap: 40px;}
+
 /* --- Contact Section --- */
 .contactMeContainer { display: flex; flex-direction: column; gap: 50px; padding-bottom: 300px; }
 .contactTitle {
@@ -329,6 +341,7 @@ body {
 
 .blog img {
     border-radius: 15px;
+    max-width: 100%;
 }
 
 .blog a {
@@ -340,6 +353,75 @@ body {
     color: inherit;
 }
 
+.postsList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 30px;
+}
+
+/* TABLE STYLES */
+
+.table-container {
+    background: var(--color-bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+thead {
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    color: #fff;
+}
+
+thead th {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    background-color: var(--color-bg-tertiary);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-bg-secondary);
+}
+
+tbody tr:hover {
+    background: rgba(230, 56, 56, 0.15);
+    transform: translateY(-2px);
+}
+
+td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #1f1f1f;
+    color: var(--text-secondary);
+}
+
+td:first-child {
+    color: var(--text-highlighted);
+    font-weight: 500;
+}
+
+tfoot td {
+    padding: 0.9rem 1rem;
+    background: var(--color-bg-tertiary);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+
 /* Mobile ≤768px */
 @media (max-width: 768px) {
   .leftAndRight {
@@ -350,7 +432,6 @@ body {
   }
 
   .pfp {
-    display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;

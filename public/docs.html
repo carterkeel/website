@@ -27,9 +27,9 @@
                 </div>
     
                 <nav class="navLinks">
-                    <a href="/index.html#about">ABOUT</a>
-                    <a href="/index.html#projects">PROJECTS</a>
-                    <a href="/index.html#experience">EXPERIENCE</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#projects">PROJECTS</a>
+                    <a href="#experience">EXPERIENCE</a>
                     <a href="#contact">CONTACT</a>
                     <a href="/posts.html">POSTS</a>
                 </nav>
@@ -45,7 +45,15 @@
     
             <div class="rightBar">
                 
-                {{ markdown_to_html(content) }}
+                <div class="skillsTitle">
+    <p>
+        <span class="gradientText">Documents</span>
+    </p>
+</div>
+<section class="content">
+    <ul class="postsList"></ul>
+</section>
+
 
                 <section class="contactMeContainer" id="contact">
                     <div class="contactTitle">

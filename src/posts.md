@@ -8,5 +8,5 @@ title: Posts
     </p>
 </div>
 <section class="content">
-    <ul>{{ join(map(dir("posts"), file, apply_layout(file, "card"))) }}</ul>
+    <ul class="postsList">{{ join(map(dir("posts"), file, apply_layout(file, "card"))) }}</ul>
 </section>
