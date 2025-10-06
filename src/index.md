@@ -62,7 +62,7 @@ layout: page
                                 <li>OSINT</li>
                             </ul>
                             <ul>
-                                <li>c++</li>
+                                <li>C++</li>
                                 <li>Java</li>
                             </ul>
                         </div>
