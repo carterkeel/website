@@ -79,6 +79,11 @@ body {
     width: 300px;
     border-radius: 50%;
     border: solid 5px var(--text-highlighted);
+    transition: transform 0.2s ease-out; /* smooth animation */
+}
+
+.pfp:hover {
+  transform: translateY(-5px); /* moves element upward */
 }
 
 .heading { font-size: 65px; font-weight: bold; }
@@ -97,13 +102,13 @@ body {
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-secondary);
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, color 0.6s ease;
 }
 
 .navLinks a.active,
 .navLinks a:hover {
     color: var(--text-primary);
-    transform: translateX(20px);
+    transform: translateX(10px);
 }
 
 .navLinks:hover a.active:not(:hover) {
@@ -138,7 +143,7 @@ body {
    ========================= */
 
 /* --- Skills Section --- */
-.skills { display: flex; flex-direction: column; gap: 60px; }
+.skills { display: flex; flex-direction: column; gap: 40px; }
 .skillsTitle {
     padding-top: 50px;
     font-size: 60px;
@@ -165,7 +170,7 @@ body {
 /* --- Projects Section --- */
 .projectsContainer { display: flex; flex-direction: column; gap: 60px; }
 .projectsTitle {
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
@@ -176,7 +181,7 @@ body {
     display: flex;
     gap: 20px;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 2px solid transparent;
     transition: background 0.5s ease, transform 0.3s ease, border-color 0.3s ease;
 }
@@ -198,7 +203,7 @@ body {
 /* --- Experience Section --- */
 .experienceContainer { display: flex; flex-direction: column; gap: 60px; }
 .experienceTitle {
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
@@ -240,7 +245,7 @@ body {
 
 /* --- Recent Posts --- */
 .postsTitle {
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
@@ -251,9 +256,9 @@ body {
 .postsContainer {display: flex; flex-direction: column; gap: 40px;}
 
 /* --- Contact Section --- */
-.contactMeContainer { display: flex; flex-direction: column; gap: 50px; padding-bottom: 300px; }
+.contactMeContainer { display: flex; flex-direction: column; gap: 50px; padding-bottom: 350px; }
 .contactTitle {
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
@@ -360,7 +365,7 @@ body {
     gap: 30px;
 }
 
-/* TABLE STYLES */
+/* TABLE LIST CODE BLOCK */
 
 .table-container {
     background: var(--color-bg-secondary);
@@ -421,34 +426,179 @@ tfoot td {
     color: var(--text-primary);
 }
 
+ul,
+ol {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+li {
+  position: relative;
+  padding: 0.5rem 0 0.5rem 1.8rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 🔹 Unordered list bullet */
+ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  opacity: 0.9;
+}
+
+/* 🔸 Ordered list numbering */
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol > li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  color: var(--text-highlighted);
+  font-weight: 600;
+  width: 1.2rem;
+  text-align: right;
+}
+
+/* 🌿 Nested lists */
+li ul,
+li ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding-left: 1.2rem;
+}
+
+/* Nested unordered list bullets (smaller + dimmer) */
+ul ul > li::before {
+  width: 0.35rem;
+  height: 0.35rem;
+  background: var(--text-highlighted);
+  opacity: 0.7;
+}
+
+/* Nested ordered list numbers (smaller + lighter) */
+ol ol > li::before {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* 💻 Code blocks */
+pre {
+  background: var(--color-bg-tertiary);
+  color: var(--text-primary);
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  overflow-x: auto;
+  box-shadow: 0 0 20px rgba(230, 17, 167, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+code {
+  color: var(--text-highlighted);
+  background: var(--color-bg-secondary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+}
+
+/* Inline code */
+p code,
+li code {
+  background: var(--color-bg-secondary);
+  color: var(--text-highlighted);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
 
 /* Mobile ≤768px */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .leftAndRight {
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 40px;
+    padding: 0 1rem;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  /* ----- Left Section (Profile + Nav) ----- */
+  .leftBar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+    border-bottom: 1px solid var(--text-secondary);
+    gap: 1.5rem;
   }
 
   .pfp {
-    margin: 0 auto;
-    max-width: 100%;
+    width: 180px;
     height: auto;
+    margin-bottom: 0.5rem;
   }
 
-  .subHeading { font-size: 20px; }
+  .heading {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
 
-  .leftBar {
-    padding-top: 100px;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    height: auto;
+  .subHeading {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+  }
+
+  .occupation {
     width: 100%;
-    justify-content: space-around;
-    gap: 20px;
-    border-bottom: 1px solid var(--text-muted);
+    max-width: 300px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+  }
+
+  .navLinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .navLinks a {
+    font-size: 0.95rem;
+    transform: none;
+    transition: color 0.3s ease;
+  }
+
+  .navLinks a.active,
+  .navLinks a:hover {
+    color: var(--text-highlighted);
+    transform: none;
+  }
+
+  .social {
+    justify-content: center;
+    gap: 1.5rem;
   }
 
   .rightBar {
@@ -473,7 +623,11 @@ tfoot td {
   }
 
   .heading { font-size: 40px; }
-  .skillsTitle,
-  .projectsTitle,
-  .experienceTitle { font-size: 40px; }
+    .skillsTitle,
+    .projectsTitle,
+    .experienceTitle,
+    .postsTitle,
+    .contactTitle {
+    font-size: 40px;
+    }
 }
