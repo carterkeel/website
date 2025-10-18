@@ -27,7 +27,6 @@ body {
    GLOBAL UTILITIES
    ========================= */
 .gradientText {
-
     /* !darkreaderignore */
     background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)) !important;
     -webkit-background-clip: text !important;
