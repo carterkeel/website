@@ -27,11 +27,13 @@ body {
    GLOBAL UTILITIES
    ========================= */
 .gradientText {
-    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+
+    /* !darkreaderignore */
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
 }
 
 .highlightedText {
@@ -594,6 +596,10 @@ li code {
   .navLinks a:hover {
     color: var(--text-highlighted);
     transform: none;
+  }
+
+  .social a:visited {
+    color: var(--text-highlighted);
   }
 
   .social {
