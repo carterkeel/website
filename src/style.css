@@ -91,6 +91,27 @@ body {
 .subHeading { font-size: 30px; }
 .occupation { width: 300px; color: var(--text-secondary); }
 
+/* ----- Partner (Proton VPN) ----- */
+.partner a {
+  color: var(--text-secondary);
+}
+.partner {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  transition: transform 0.2s ease-out;
+}
+.partner:hover { transform: translateY(-3px); }
+.partnerLink { display: inline-block; }
+.partnerLogo {
+  width: 40px;
+  border-radius: 6px;
+  border: none;
+  display: block;
+}
+.partnerText { margin: 0; color: var(--text-secondary); font-size: 14px; }
+
 /* ----- Navigation Links ----- */
 .navLinks {
     display: flex;
@@ -194,6 +215,7 @@ body {
 
 .projects a svg { transition: transform 0.2s ease-in-out; }
 .projects a:hover svg { transform: scale(1.2); }
+.projects a:visited { color: var(--text-highlighted); }
 
 .projectThumbnail { width: 300px; border-radius: 10px; display: block; }
 .projectTitle { font-size: 18px; font-weight: bold; }
@@ -321,6 +343,7 @@ body {
     .heading { font-size: 50px; }
     .subHeading { font-size: 22px; }
     .occupation { display: none; }
+    .partnerLogo { width: 32px; }
     .skillsTitle,
     .projectsTitle,
     .experienceTitle,

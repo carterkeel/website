@@ -9,7 +9,7 @@ summary: Growing from content creation to cybersecurity.
 categories:
   - Social Media
   - About Me
-image: /static/post_thumbnails/about_me.jpg
+image: /static/post_thumbnails/about_me.webp
 description: Who is Carter and what does he do?
 layout: single
 ---

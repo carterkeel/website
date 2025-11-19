@@ -10,7 +10,7 @@ tags:
 summary: Best times and days of the week to post.
 categories:
   - Social Media
-image: /static/post_thumbnails/best_times.jpg
+image: /static/post_thumbnails/best_times.webp
 description: Best times and days of the week to post.
 ---
 

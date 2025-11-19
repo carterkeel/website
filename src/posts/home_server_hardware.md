@@ -8,7 +8,7 @@ tags:
   - documentation
   - homelab
 summary: Parts list and goals for a portable mini server rack.
-image: /static/post_thumbnails/server.jpg
+image: /static/post_thumbnails/server.webp
 description: List of parts for my mini server.
 ---
 
