@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main>
+  <h1>{{ .Site.Params.landing.name }}</h1>
+
+  <p>
+    {{ delimit .Site.Params.landing.roles " | " }}
+  </p>
+</main>
+{{ end }}

@@ -1,0 +1,25 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "Carter Keel"
+
+theme: "carters-theme"
+
+params:
+  landing:
+    name: "Carter Keel"
+    roles:
+      - Video
+      - IT
+      - Cybersecurity
+
+menu:
+  main:
+    - name: "About"
+      url: "/about/"
+      weight: 1
+    - name: "Projects"
+      url: "/projects/"
+      weight: 2
+    - name: "Contact"
+      url: "/contact/"
+      weight: 3
