@@ -902,6 +902,10 @@ p {
 /* =========================
    CONTACT OUTER BOX
 ========================= */
+.contactMeContainer {
+  max-width: 800px;
+}
+
 .container-readable {
   border-radius: 10px; /* match post & project cards */
   border: 1px solid var(--color-bg-tertiary);

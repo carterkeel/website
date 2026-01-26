@@ -19,7 +19,7 @@ params:
     - label: "Resume"
       url: "/documents/carter_resume.pdf"
     - label: "Contact"
-      url: "/contact"
+      url: "#contact"
   
   landing:
     name: "Hi, I'm Carter Keel"
