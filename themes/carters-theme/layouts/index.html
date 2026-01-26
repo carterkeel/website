@@ -190,5 +190,51 @@
   {{ end }}
 </section>
 
+{{ with .Site.Params.contact }}
+<section class="contactMeContainer" id="{{ .id }}">
+  <div class="contactTitle">
+    <p>
+      <span class="gradientText">{{ .title }}</span>
+    </p>
+  </div>
+
+  {{ with .subtitle }}
+    <p class="section-subtitle">{{ . }}</p>
+  {{ end }}
+
+  <div class="container-readable">
+    <form
+      class="contact-form"
+      action="{{ .form.action }}"
+      method="{{ .form.method }}"
+    >
+
+      {{ range .form.fields }}
+        {{ if eq .type "textarea" }}
+          <textarea
+            name="{{ .name }}"
+            placeholder="{{ .placeholder }}"
+            rows="{{ .rows | default 4 }}"
+            {{ if .required }}required{{ end }}
+          ></textarea>
+        {{ else }}
+          <input
+            type="{{ .type }}"
+            name="{{ .name }}"
+            placeholder="{{ .placeholder }}"
+            {{ if .required }}required{{ end }}
+          />
+        {{ end }}
+      {{ end }}
+
+      <button type="submit" class="button button-primary">
+        {{ .form.submit.label }}
+      </button>
+    </form>
+  </div>
+</section>
+{{ end }}
+
+
 </main>
 {{ end }}

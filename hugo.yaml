@@ -17,7 +17,7 @@ params:
     - label: "Projects"
       url: "/projects"
     - label: "Resume"
-      url: "/resume"
+      url: "/documents/carter_resume.pdf"
     - label: "Contact"
       url: "/contact"
   
@@ -126,4 +126,32 @@ params:
     resume:
       label: "Résumé"
       url: "/resume"
+
+  contact:
+    id: "contact"
+    title: "Contact"
+    subtitle: "I am open for opportunities."
+    form:
+      action: "https://formspree.io/f/mldwzvgk"
+      method: "POST"
+      fields:
+        - type: "text"
+          name: "name"
+          placeholder: "Your Name"
+          required: true
+
+        - type: "email"
+          name: "email"
+          placeholder: "Your Email"
+          required: true
+
+        - type: "textarea"
+          name: "message"
+          placeholder: "Your Message"
+          rows: 5
+          required: true
+
+      submit:
+        label: "Send Message"
+
 
