@@ -6,6 +6,7 @@
   {{ end }}
 
   <h1>{{ .Title }}</h1>
+  <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
 
   {{ with .Params.tags }}
     <ul>

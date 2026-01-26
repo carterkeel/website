@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Carter Keel</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Carter Keel</description>
+    <title>Cybersecurity on Carter Keel</title>
+    <link>http://localhost:1313/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on Carter Keel</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/example/</link>

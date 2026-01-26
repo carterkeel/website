@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>{{ .Site.Title }}</title>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="{{ "icons/fav.webp" | relURL }}">
 </head>
 <body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      {{ with .Site.Params.logo }}
+      <a href="{{ "/" | relURL }}" class="nav-logo">
+        <img src="{{ .src }}" alt="{{ .alt }}">
+      </a>
+      {{ end }}
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      {{ with .Site.Params.nav }}
+      <ul class="nav-menu" id="navMenu">
+        {{ range . }}
+          <li>
+            <a href="{{ .url }}">{{ .label }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </nav>
+  </header>
+
   {{ block "main" . }}{{ end }}
+
+  <!-- Main JS -->
+  <script src="{{ "js/main.js" | relURL }}"></script>
 </body>
 </html>

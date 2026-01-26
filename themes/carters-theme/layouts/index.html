@@ -1,9 +1,189 @@
 {{ define "main" }}
 <main>
-  <h1>{{ .Site.Params.landing.name }}</h1>
 
-  <p>
-    {{ delimit .Site.Params.landing.roles " | " }}
-  </p>
+  <!-- HERO -->
+  <section>
+    <div class="hero-content">
+      {{ with .Site.Params.landing.pfp }}
+        <img src="{{ . }}" alt="Profile Picture" class="pfp">
+      {{ end }}
+      <div class="hero-text">
+        <h1>{{ .Site.Params.landing.name }}</h1>
+        <p>{{ delimit .Site.Params.landing.roles " | " }}</p>
+
+        <!-- PARTNERS SECTION -->
+        {{ with .Site.Params.landing.partners }}
+        {{ range . }}
+        <p class="partner-link">
+          <a href="{{ .url }}" title="Partnered with {{ .name }}">
+            <img src="{{ .image }}" alt="{{ .name }}" class="partner-logo">
+            Partnered with {{ .name }}
+          </a>
+        </p>
+        {{ end }}
+        {{ end }}
+
+        <!-- LINKS -->
+        {{ with .Site.Params.landing.links }}
+        <ul class="social-links">
+          {{ range . }}
+            <li>
+              <a href="{{ .url }}" title="{{ .label }}">
+                <img src="{{ .icon }}" alt="{{ .label }}">
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+
+        <!-- ABOUT ME LINK -->
+        {{ with .Site.Params.landing.aboutMe }}
+        <p class="about-me-link">
+          <a href="{{ .url }}">{{ .label }}</a>
+        </p>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / SKILLS -->
+  <section>
+    <h2>About</h2>
+    <p>{{ .Site.Params.about.intro }}</p>
+
+    {{ range .Site.Params.about.sections }}
+      <div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+
+        <ul>
+          {{ range .skills }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </section>
+
+    <!-- FEATURED PROJECTS -->
+  {{ with .Site.Params.landing.featuredProjects }}
+  <section>
+    <h2>Projects</h2>
+
+    {{ range . }}
+      {{ $slug := . }}
+      {{ with site.GetPage (printf "projects/%s" $slug) }}
+        <article>
+
+          {{ with .Params.thumbnail }}
+            <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
+          {{ end }}
+
+          <div class="article-content">
+            <h3>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
+
+            <p>{{ .Summary }}</p>
+
+            {{ with .Params.tags }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+
+        </article>
+      {{ end }}
+    {{ end }}
+
+  </section>
+  {{ end }}
+
+<!-- EXPERIENCE -->
+{{ with .Site.Params.experience }}
+<section>
+  <h2>Experience</h2>
+
+  {{ with .employment }}
+  <div>
+    <h3>Employment</h3>
+    {{ range . }}
+      <article class="experience-card">
+        <div class="experience-info">
+          <h4>{{ .company }}</h4>
+          <p><strong>{{ .location }}</strong></p>
+        </div>
+        <p class="experience-date">{{ .startDate }} – {{ .endDate }}</p>
+      </article>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .education }}
+  <div>
+    <h3>Education</h3>
+    {{ range . }}
+      <article>
+        <h4>{{ .degree }}</h4>
+        <p><strong>{{ .school }}</strong> – {{ .location }}</p>
+        {{ if .expected }}
+          <p>Expected {{ .expected }}</p>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ if .resume }}
+  <div class="resume-section">
+    <a href="{{ .resume.url }}" class="resume-button">{{ .resume.label }}</a>
+  </div>
+  {{ end }}
+</section>
+{{ end }}
+
+<!-- RECENT POSTS -->
+<section>
+  <h2>Recent Posts</h2>
+
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $recent := first 3 (sort $posts "Date" "desc") }}
+
+  {{ if gt (len $recent) 0 }}
+    {{ range $recent }}
+      <article>
+
+        {{ with .Params.thumbnail }}
+          <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
+        {{ end }}
+
+        <div class="article-content">
+          <h3>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
+
+          <p>{{ .Summary }}</p>
+
+          {{ with .Params.tags }}
+            <ul>
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+
+      </article>
+    {{ end }}
+  {{ else }}
+    <p>No posts yet.</p>
+  {{ end }}
+</section>
+
 </main>
 {{ end }}

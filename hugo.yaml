@@ -5,6 +5,22 @@ title: "Carter Keel"
 theme: "carters-theme"
 
 params:
+  favicon: "/images/icons/fav.webp"
+
+  logo:
+    src: "/images/icons/fav.webp"
+    alt: "Site Logo"
+
+  nav:
+    - label: "Blog"
+      url: "/posts"
+    - label: "Projects"
+      url: "/projects"
+    - label: "Resume"
+      url: "/resume"
+    - label: "Contact"
+      url: "/contact"
+  
   landing:
     name: "Carter Keel"
     roles:
@@ -12,14 +28,91 @@ params:
       - IT
       - Cybersecurity
 
-menu:
-  main:
-    - name: "About"
-      url: "/about/"
-      weight: 1
-    - name: "Projects"
-      url: "/projects/"
-      weight: 2
-    - name: "Contact"
-      url: "/contact/"
-      weight: 3
+    pfp: "/images/icons/pfp.webp"
+
+    aboutMe:
+      label: "About Me"
+      url: "#about"
+
+    partners:
+      - name: "Proton VPN"
+        image: "/images/icons/protonvpn.png"
+        url: "https://proton.me"
+
+    featuredProjects:
+      - "example"
+      - "example1"
+      - "example2"
+
+    links:
+      - label: "GitHub"
+        icon: "/images/icons/github.svg"
+        url: "https://github.com"
+      - label: "LinkedIn"
+        icon: "/images/icons/linkedin.svg"
+        url: "https://linkedin.com"
+
+  about:
+    # intro: >
+    #   random intro
+
+    sections:
+      - title: "Video & Media"
+        description: >
+          Professional experience in video editing, videography, and live video
+          production for streaming.
+        skills:
+          - Adobe Premiere Pro
+          - Davinci Resolve
+          - OBS Studio
+          - vMix
+          - Adobe Photoshop
+          - Photopea
+
+      - title: "IT & Infrastructure"
+        description: >
+          IT specialist with experience in support, server management, and
+          network configuration using industry-standard equipment and software.
+        skills:
+          - Proxmox
+          - Microsoft Windows
+          - macOS
+          - Ubuntu Server
+          - Unifi Hardware
+          - PC Building
+
+      - title: "Cybersecurity"
+        description: >
+          Cybersecurity analyst with experience in open-source intelligence,
+          account security, and collegiate red-team / white-hat competitions.
+          I also create educational cybersecurity content online.
+        skills:
+          - Wireshark
+          - Microsoft Group Policy Editor
+          - VPN Configuration
+          - OSINT
+          - C++
+          - Java
+
+  experience:
+    employment:
+      - company: "Be A Light Productions"
+        location: "Pensacola, FL"
+        startDate: "Oct 2022"
+        endDate: "Current"
+      - company: "Storypoint church"
+        location: "Gulf Breeze, FL"
+        startDate: "Sept 2021"
+        endDate: "Dec 2023"
+    education:
+      - degree: "Bachelor of Science, Cybersecurity"
+        school: "University of West Florida"
+        location: "Pensacola, FL"
+        expected: "2026"
+      - degree: "Associate of Arts"
+        school: "Pensacola State College"
+        location: "Pensacola FL"
+    resume:
+      label: "Résumé"
+      url: "/resume"
+

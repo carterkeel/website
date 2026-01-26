@@ -1,8 +1,32 @@
 {{ define "main" }}
 <main>
   <h1>{{ .Title }}</h1>
-  {{ range .Pages }}
-    <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+
+  {{ range .Pages.ByDate.Reverse }}
+    <article>
+
+      {{ with .Params.thumbnail }}
+        <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
+      {{ end }}
+
+      <div class="article-content">
+        <h3>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
+
+        <p>{{ .Summary }}</p>
+
+        {{ with .Params.tags }}
+          <ul>
+            {{ range . }}
+              <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+
+    </article>
   {{ end }}
 </main>
 {{ end }}
