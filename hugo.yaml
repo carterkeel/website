@@ -40,9 +40,8 @@ params:
         url: "https://proton.me"
 
     featuredProjects:
-      - "example"
-      - "example1"
-      - "example2"
+      - "home_server_hardware"
+      - "livestream_instructions"
 
     links:
       - label: "GitHub"
