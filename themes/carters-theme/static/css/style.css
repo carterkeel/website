@@ -247,7 +247,6 @@ section:nth-of-type(2) ul li {
 
 section:nth-of-type(2) ul li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(230, 56, 56, 0.3);
 }
 
 .hero-content {
@@ -258,7 +257,7 @@ section:nth-of-type(2) ul li:hover {
 
 /* Profile image */
 .pfp {
-  width: 250px;
+  width: 350px;
   border-radius: 50%;
   border: 3px solid var(--text-highlighted);
   flex-shrink: 0;
@@ -284,6 +283,7 @@ section:nth-of-type(2) ul li:hover {
 }
 
 /* Social icons - stacked vertically with text */
+
 .social-links {
   display: flex;
   gap: 1.5rem;
@@ -292,40 +292,20 @@ section:nth-of-type(2) ul li:hover {
   list-style: none;
 }
 
-.social-links li a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.social-links a img {
+  width: 24px;
+  height: 24px;
 }
 
-.social-links li img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.25s ease, filter 0.25s ease;
+.social-links a {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 
-.social-links li img[src$=".svg"] {
-  filter: drop-shadow(0 0 4px var(--text-highlighted));
-  -webkit-filter: drop-shadow(0 0 4px var(--text-highlighted));
-  color: var(--text-highlighted);
+.social-links a:hover {
+  transform: scale(1.2);
 }
 
-.social-links li img:not([src$=".svg"]) {
-  filter: drop-shadow(0 0 4px var(--text-highlighted));
-}
-
-.social-links li a:hover img {
-  transform: translateY(-4px) scale(1.15);
-}
-
-.social-links li a:hover img[src$=".svg"] {
-  filter: drop-shadow(0 0 8px var(--text-highlighted));
-  -webkit-filter: drop-shadow(0 0 8px var(--text-highlighted));
-}
-
-.social-links li a:hover img:not([src$=".svg"]) {
-  filter: drop-shadow(0 0 8px var(--text-highlighted));
-}
 
 /* About Me Link */
 .about-me-link {
@@ -416,7 +396,7 @@ article img {
   width: 300px;
 
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 8px;
   flex-shrink: 0;
 }
 
@@ -495,12 +475,10 @@ article:hover ul li {
   font-weight: 600;
   font-size: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 15px rgba(230, 56, 56, 0.3);
 }
 
 .resume-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(230, 56, 56, 0.5);
 }
 
 /* =========================

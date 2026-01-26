@@ -29,7 +29,7 @@
           {{ range . }}
             <li>
               <a href="{{ .url }}" title="{{ .label }}">
-                <img src="{{ .icon }}" alt="{{ .label }}">
+                <img src="{{ .icon }}" alt="{{ .label }}" class="iconsColor">
               </a>
             </li>
           {{ end }}
@@ -129,12 +129,13 @@
   <div>
     <h3>Education</h3>
     {{ range . }}
-      <article>
-        <h4>{{ .degree }}</h4>
-        <p><strong>{{ .school }}</strong> – {{ .location }}</p>
-        {{ if .expected }}
-          <p>Expected {{ .expected }}</p>
-        {{ end }}
+      <article class="experience-card">
+        <div class="experience-info">
+          <h4>{{ .degree }}</h4>
+          <p><strong>{{ .school }}</strong></p>
+          <p>{{ .location }}</p>
+        </div>
+        <p class="experience-date">{{ if .expected }}Expected {{ .expected }}{{ else }}Completed{{ end }}</p>
       </article>
     {{ end }}
   </div>
