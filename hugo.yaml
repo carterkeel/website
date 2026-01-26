@@ -37,7 +37,7 @@ params:
     partners:
       - name: "Proton VPN"
         image: "/images/icons/protonvpn.png"
-        url: "https://proton.me"
+        url: "https://go.getproton.me/SH27U"
 
     featuredProjects:
       - "home_server_hardware"

@@ -73,30 +73,32 @@
     {{ range . }}
       {{ $slug := . }}
       {{ with site.GetPage (printf "projects/%s" $slug) }}
-        <article>
+        <a href="{{ .RelPermalink }}" class="article-link">
+          <article>
 
-          {{ with .Params.thumbnail }}
-            <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
-          {{ end }}
-
-          <div class="article-content">
-            <h3>
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h3>
-            <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
-
-            <p>{{ .Summary }}</p>
-
-            {{ with .Params.tags }}
-              <ul>
-                {{ range . }}
-                  <li>{{ . }}</li>
-                {{ end }}
-              </ul>
+            {{ with .Params.thumbnail }}
+              <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
             {{ end }}
-          </div>
 
-        </article>
+            <div class="article-content">
+              <h3>
+                {{ .Title }}
+              </h3>
+              <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
+
+              <p>{{ .Summary }}</p>
+
+              {{ with .Params.tags }}
+                <ul>
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </div>
+
+          </article>
+        </a>
       {{ end }}
     {{ end }}
 
@@ -155,30 +157,32 @@
 
   {{ if gt (len $recent) 0 }}
     {{ range $recent }}
-      <article>
+      <a href="{{ .RelPermalink }}" class="article-link">
+        <article>
 
-        {{ with .Params.thumbnail }}
-          <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
-        {{ end }}
-
-        <div class="article-content">
-          <h3>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h3>
-          <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
-
-          <p>{{ .Summary }}</p>
-
-          {{ with .Params.tags }}
-            <ul>
-              {{ range . }}
-                <li>{{ . }}</li>
-              {{ end }}
-            </ul>
+          {{ with .Params.thumbnail }}
+            <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
           {{ end }}
-        </div>
 
-      </article>
+          <div class="article-content">
+            <h3>
+              {{ .Title }}
+            </h3>
+            <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
+
+            <p>{{ .Summary }}</p>
+
+            {{ with .Params.tags }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+
+        </article>
+      </a>
     {{ end }}
   {{ else }}
     <p>No posts yet.</p>

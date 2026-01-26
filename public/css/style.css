@@ -578,3 +578,237 @@ main > img {
     text-align: left;
   }
 }
+
+/* =========================
+   CONTENT STYLING
+========================= */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, var(--gradient-end), var(--gradient-start));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+h4, h5, h6 {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+/* Lists and Bullets */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  line-height: 1.8;
+}
+
+ul li, ol li {
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+}
+
+ul li::marker {
+  color: var(--text-highlighted);
+}
+
+ol li::marker {
+  color: var(--text-highlighted);
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: var(--text-highlighted);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+a:hover {
+  color: var(--gradient-start);
+}
+
+a:visited {
+  color: #c74747;
+}
+
+/* Code Blocks */
+pre {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  line-height: 1.5;
+}
+
+pre code {
+  color: var(--text-primary);
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+}
+
+/* Inline Code */
+code {
+  background: var(--color-bg-secondary);
+  color: var(--text-highlighted);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+pre code {
+  background: transparent;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: var(--color-bg-secondary);
+  border-bottom: 2px solid var(--color-bg-tertiary);
+}
+
+th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-highlighted);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+  color: var(--text-primary);
+}
+
+tbody tr:hover {
+  background: var(--color-bg-secondary);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--text-highlighted);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--color-bg-secondary);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0.5rem 0;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-bg-tertiary);
+  margin: 2rem 0;
+}
+
+/* Paragraph spacing */
+p {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+/* =========================
+   ARTICLE LINK
+========================= */
+.article-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.article-link article {
+  cursor: pointer;
+}
+
+.article-link h3 {
+  transition: opacity 0.3s ease;
+}
+
+.article-link:hover h3 {
+  opacity: 0.7;
+}
+
+/* =========================
+   RELATED POSTS / PROJECTS
+========================= */
+.related-posts {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-bg-tertiary);
+}
+
+.related-posts h2 {
+  margin-bottom: 1.5rem;
+}
+
+.posts-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* =========================
+   BACK LINK
+========================= */
+.back-link {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.back-link a {
+  display: inline-block;
+  color: var(--text-highlighted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+  transform: translateX(-4px);
+  color: var(--gradient-start);
+}
