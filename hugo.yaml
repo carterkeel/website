@@ -23,7 +23,7 @@ params:
   favicon: "/images/icons/fav.webp"
 
   search:
-    placeholder: "Search..."
+    placeholder: "Search"
     noResults: "No results found"
     labelPosts: "Post"
     labelProjects: "Project"
