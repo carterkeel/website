@@ -17,6 +17,20 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/webp" href="{{ "icons/fav.webp" | relURL }}">
+
+  <style>
+  :root {
+    --color-bg: {{ .Site.Params.colors.bg }};
+    --color-bg-secondary: {{ .Site.Params.colors.bgSecondary }};
+    --color-bg-tertiary: {{ .Site.Params.colors.bgTertiary }};
+    --text-primary: {{ .Site.Params.colors.textPrimary }};
+    --text-secondary: {{ .Site.Params.colors.textSecondary }};
+    --text-highlighted: {{ .Site.Params.colors.textHighlighted }};
+    --gradient-start: {{ .Site.Params.colors.gradientStart }};
+    --gradient-end: {{ .Site.Params.colors.gradientEnd }};
+  }
+</style>
+
 </head>
 
 <body>
@@ -63,12 +77,24 @@
   <!-- Main JS -->
   <script src="{{ "js/main.js" | relURL }}"></script>
 
+  <script>
+  window.siteConfig = {
+    search: {
+      placeholder: "{{ .Site.Params.search.placeholder }}",
+      noResults: "{{ .Site.Params.search.noResults }}",
+      labelPosts: "{{ .Site.Params.search.labelPosts }}",
+      labelProjects: "{{ .Site.Params.search.labelProjects }}"
+    }
+  };
+</script>
+
   <!-- Fuse -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="{{ "js/search.js" | relURL }}"></script>
 
   <!-- Main JS -->
   <script src="{{ "js/main.js" | relURL }}"></script>
+
   
 </body>
 </html>

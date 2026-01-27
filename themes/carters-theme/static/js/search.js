@@ -1,55 +1,47 @@
-let fuse;
-let pages = [];
-
-fetch("/index.json")
-  .then(res => {
-    if (!res.ok) {
-      throw new Error("index.json not found");
-    }
-    return res.json();
-  })
-  .then(data => {
-    pages = data;
-
-    fuse = new Fuse(pages, {
-      keys: ["title", "summary", "tags"],
-      threshold: 0.3
-    });
-  })
-  .catch(err => console.error(err));
-
 const input = document.getElementById("search-input");
 const resultsBox = document.getElementById("search-results");
 
-if (input) {
-  input.addEventListener("input", () => {
-    const query = input.value.trim();
+// Apply placeholder from config
+input.placeholder = window.siteConfig.search.placeholder;
 
-    if (!query || !fuse) {
-      resultsBox.style.display = "none";
-      resultsBox.innerHTML = "";
-      return;
-    }
+input.addEventListener("input", () => {
+  const query = input.value.trim();
 
-    const results = fuse.search(query).slice(0, 6);
+  if (!query || !fuse) {
+    resultsBox.style.display = "none";
+    resultsBox.innerHTML = "";
+    return;
+  }
 
-    resultsBox.innerHTML = results
-      .map(r => `
+  const results = fuse.search(query).slice(0, 6);
+
+  if (results.length === 0) {
+    resultsBox.innerHTML = `
+      <div class="search-empty">
+        ${window.siteConfig.search.noResults}
+      </div>
+    `;
+    resultsBox.style.display = "block";
+    return;
+  }
+
+  resultsBox.innerHTML = results
+    .map(r => {
+      const label =
+        r.item.type === "posts"
+          ? window.siteConfig.search.labelPosts
+          : window.siteConfig.search.labelProjects;
+
+      return `
         <div class="search-result">
           <a href="${r.item.url}">
-            ${r.item.title}
-            <span>${r.item.type}</span>
+            <span class="search-title">${r.item.title}</span>
+            <span class="search-type">${label}</span>
           </a>
         </div>
-      `)
-      .join("");
+      `;
+    })
+    .join("");
 
-    resultsBox.style.display = "block";
-  });
-}
-
-document.addEventListener("click", e => {
-  if (!e.target.closest(".nav-search")) {
-    resultsBox.style.display = "none";
-  }
+  resultsBox.style.display = "block";
 });

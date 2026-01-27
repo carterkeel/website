@@ -10,7 +10,23 @@ outputs:
     - JSON
 
 params:
+  colors:
+    bg: "#0f0f0f"
+    bgSecondary: "#141414"
+    bgTertiary: "#2b2b31"
+    textPrimary: "#e2e2e2"
+    textSecondary: "#a1a1aa"
+    textHighlighted: "#e63838"
+    gradientStart: "#e711a7"
+    gradientEnd: "#d61717"
+
   favicon: "/images/icons/fav.webp"
+
+  search:
+    placeholder: "Search..."
+    noResults: "No results found"
+    labelPosts: "Post"
+    labelProjects: "Project"
 
   logo:
     src: "/images/icons/fav.webp"
