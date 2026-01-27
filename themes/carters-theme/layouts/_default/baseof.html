@@ -18,15 +18,27 @@
   <!-- Favicon -->
   <link rel="icon" type="image/webp" href="{{ "icons/fav.webp" | relURL }}">
 </head>
+
 <body>
   <!-- NAVIGATION -->
   <header>
     <nav>
+      
       {{ with .Site.Params.logo }}
       <a href="{{ "/" | relURL }}" class="nav-logo">
         <img src="{{ .src }}" alt="{{ .alt }}">
       </a>
       {{ end }}
+
+      <div class="nav-search">
+  <input
+    type="search"
+    id="search-input"
+    placeholder="Search…"
+    aria-label="Search"
+  />
+  <div id="search-results"></div>
+</div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span>
@@ -51,6 +63,12 @@
   <!-- Main JS -->
   <script src="{{ "js/main.js" | relURL }}"></script>
 
+  <!-- Fuse -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="{{ "js/search.js" | relURL }}"></script>
+
+  <!-- Main JS -->
+  <script src="{{ "js/main.js" | relURL }}"></script>
   
 </body>
 </html>

@@ -1,0 +1,14 @@
+{{- $pages := where .Site.RegularPages "Type" "in" (slice "posts" "projects") -}}
+[
+{{- range $i, $p := $pages -}}
+  {{- if $i }},{{ end }}
+  {
+    "title": {{ $p.Title | jsonify }},
+    "summary": {{ $p.Summary | jsonify }},
+    "tags": {{ $p.Params.tags | default (slice) | jsonify }},
+    "url": {{ $p.RelPermalink | jsonify }},
+    "type": {{ $p.Type | jsonify }},
+    "thumbnail": {{ $p.Params.thumbnail | default "" | jsonify }}
+  }
+{{- end -}}
+]

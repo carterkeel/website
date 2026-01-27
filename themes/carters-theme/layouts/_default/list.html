@@ -2,6 +2,9 @@
 <main>
   <h1>{{ .Title }}</h1>
 
+  {{ partial "breadcrumbs.html" . }}
+
+
   {{ range .Pages.ByDate.Reverse }}
     <a href="{{ .RelPermalink }}" class="article-link">
       <article>

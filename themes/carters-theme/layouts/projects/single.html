@@ -1,6 +1,9 @@
 {{ define "main" }}
 <main>
 
+  {{ partial "breadcrumbs.html" . }}
+
+
   {{ with .Params.thumbnail }}
     <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
   {{ end }}

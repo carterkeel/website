@@ -18,10 +18,20 @@
   
   <link rel="icon" type="image/webp" href="/icons/fav.webp">
 </head>
+
 <body>
   
   <header>
     <nav>
+      <div class="nav-search">
+  <input
+    type="search"
+    id="search-input"
+    placeholder="Search…"
+    aria-label="Search"
+  />
+  <div id="search-results"></div>
+</div>
       
       <a href="/" class="nav-logo">
         <img src="/images/icons/fav.webp" alt="Site Logo">
@@ -62,9 +72,34 @@
 <main>
 
   
-    <img src="/images/content/about_me.webp" alt="From Content Creation to Cybersecurity: The Journey of Carter Keel thumbnail">
-  
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
 
+    
+      <li>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/posts/">
+          Posts
+        </a>
+      </li>
+    
+
+    <li>
+      <span class="breadcrumb-separator">/</span>
+      <span aria-current="page">From Content Creation to Cybersecurity: The Journey of Carter Keel</span>
+    </li>
+  </ul>
+</nav>
+
+  
+  
+  <img src="/images/content/about_me.webp" alt="From Content Creation to Cybersecurity: The Journey of Carter Keel thumbnail">
+  
+  
+  
   <h1>From Content Creation to Cybersecurity: The Journey of Carter Keel</h1>
   <p><small>May 26, 2025</small></p>
 
@@ -100,7 +135,7 @@
                     data-lang="en"
                     crossorigin="anonymous"
                     async>
-                </script>
+  </script>
 
 </main>
 
@@ -108,6 +143,12 @@
   
   <script src="/js/main.js"></script>
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/js/search.js"></script>
+
+  
+  <script src="/js/main.js"></script>
   
 </body>
 </html>

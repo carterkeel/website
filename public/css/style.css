@@ -28,6 +28,73 @@ img {
 }
 
 /* =========================
+   NAV SEARCH
+========================= */
+
+.nav-search {
+  position: relative;
+}
+
+.nav-search input {
+  background: var(--color-bg-secondary);
+  border: 1px solid #1f1f1f;
+  color: var(--text-primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  width: 180px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.nav-search input:focus {
+  outline: none;
+  border-color: var(--text-highlighted);
+  box-shadow: 0 0 0 2px rgba(230, 56, 56, 0.25);
+}
+
+/* Results dropdown */
+#search-results {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: var(--color-bg-secondary);
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  max-height: 320px;
+  overflow-y: auto;
+  display: none;
+  z-index: 200;
+}
+
+.search-result {
+  padding: 0.75rem;
+  border-bottom: 1px solid #1f1f1f;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.search-result:hover {
+  background: var(--color-bg-tertiary);
+}
+
+.search-result a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.search-result span {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+
+/* =========================
    HEADER / NAV
 ========================= */
 header {
@@ -925,3 +992,64 @@ p {
     box-shadow 0.25s ease;
 }
 
+/* =========================
+   BREADCRUMBS
+========================= */
+.breadcrumbs {
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+  padding-left: 2rem;
+  font-size: 0.85rem;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* 👇 this is the important part */
+  justify-content: flex-start;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-secondary);
+}
+
+.breadcrumb-separator {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.breadcrumbs a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumbs a:hover {
+  color: var(--text-highlighted);
+}
+
+.breadcrumbs span[aria-current="page"] {
+  color: var(--text-primary);
+}
+
+.breadcrumbs a {
+  color: var(--text-secondary);
+  text-decoration: none;
+
+  transition:
+    color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.breadcrumbs a:hover {
+  color: var(--text-highlighted);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,21 @@
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ul>
+    <li>
+      <a href="{{ "/" | relURL }}">Home</a>
+    </li>
+
+    {{ with .Section }}
+      <li>
+        <span class="breadcrumb-separator">/</span>
+        <a href="{{ printf "/%s/" . | relURL }}">
+          {{ . | title }}
+        </a>
+      </li>
+    {{ end }}
+
+    <li>
+      <span class="breadcrumb-separator">/</span>
+      <span aria-current="page">{{ .Title }}</span>
+    </li>
+  </ul>
+</nav>

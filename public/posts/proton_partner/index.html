@@ -18,15 +18,27 @@
   
   <link rel="icon" type="image/webp" href="/icons/fav.webp">
 </head>
+
 <body>
   
   <header>
     <nav>
       
+      
       <a href="/" class="nav-logo">
         <img src="/images/icons/fav.webp" alt="Site Logo">
       </a>
       
+
+      <div class="nav-search">
+  <input
+    type="search"
+    id="search-input"
+    placeholder="Search…"
+    aria-label="Search"
+  />
+  <div id="search-results"></div>
+</div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span>
@@ -62,9 +74,34 @@
 <main>
 
   
-    <img src="/images/content/proton_partner.webp" alt="I Am Now a Proton Partner thumbnail">
-  
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
 
+    
+      <li>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/posts/">
+          Posts
+        </a>
+      </li>
+    
+
+    <li>
+      <span class="breadcrumb-separator">/</span>
+      <span aria-current="page">I Am Now a Proton Partner</span>
+    </li>
+  </ul>
+</nav>
+
+  
+  
+  <img src="/images/content/proton_partner.webp" alt="I Am Now a Proton Partner thumbnail">
+  
+  
+  
   <h1>I Am Now a Proton Partner</h1>
   <p><small>November 15, 2025</small></p>
 
@@ -101,7 +138,7 @@ If you want to learn more or get 75% off Proton VPN, click <a href="https://go.g
                     data-lang="en"
                     crossorigin="anonymous"
                     async>
-                </script>
+  </script>
 
 </main>
 
@@ -109,6 +146,12 @@ If you want to learn more or get 75% off Proton VPN, click <a href="https://go.g
   
   <script src="/js/main.js"></script>
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/js/search.js"></script>
+
+  
+  <script src="/js/main.js"></script>
   
 </body>
 </html>

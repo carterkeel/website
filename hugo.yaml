@@ -4,6 +4,11 @@ title: "Carter Keel"
 
 theme: "carters-theme"
 
+outputs:
+  home:
+    - HTML
+    - JSON
+
 params:
   favicon: "/images/icons/fav.webp"
 

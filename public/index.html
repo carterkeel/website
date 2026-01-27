@@ -19,15 +19,27 @@
   
   <link rel="icon" type="image/webp" href="/icons/fav.webp">
 </head>
+
 <body>
   
   <header>
     <nav>
       
+      
       <a href="/" class="nav-logo">
         <img src="/images/icons/fav.webp" alt="Site Logo">
       </a>
       
+
+      <div class="nav-search">
+  <input
+    type="search"
+    id="search-input"
+    placeholder="Search…"
+    aria-label="Search"
+  />
+  <div id="search-results"></div>
+</div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span>
@@ -503,6 +515,12 @@
   
   <script src="/js/main.js"></script>
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/js/search.js"></script>
+
+  
+  <script src="/js/main.js"></script>
   
 </body>
 </html>

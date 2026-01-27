@@ -1,10 +1,14 @@
 {{ define "main" }}
 <main>
 
+  
+  {{ partial "breadcrumbs.html" . }}
+  
   {{ with .Params.thumbnail }}
-    <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
+  <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
   {{ end }}
-
+  
+  
   <h1>{{ .Title }}</h1>
   <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
 
@@ -34,7 +38,7 @@
                     data-lang="en"
                     crossorigin="anonymous"
                     async>
-                </script>
+  </script>
 
 </main>
 {{ end }}

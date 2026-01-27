@@ -18,10 +18,20 @@
   
   <link rel="icon" type="image/webp" href="/icons/fav.webp">
 </head>
+
 <body>
   
   <header>
     <nav>
+      <div class="nav-search">
+  <input
+    type="search"
+    id="search-input"
+    placeholder="Search…"
+    aria-label="Search"
+  />
+  <div id="search-results"></div>
+</div>
       
       <a href="/" class="nav-logo">
         <img src="/images/icons/fav.webp" alt="Site Logo">
@@ -60,6 +70,30 @@
 
   
 <main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+
+    
+      <li>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/projects/">
+          Projects
+        </a>
+      </li>
+    
+
+    <li>
+      <span class="breadcrumb-separator">/</span>
+      <span aria-current="page">Livestream Setup Instructions</span>
+    </li>
+  </ul>
+</nav>
+
+
 
   
     <img src="/images/content/stream_setup.webp" alt="Livestream Setup Instructions thumbnail">
@@ -217,6 +251,12 @@
   
   <script src="/js/main.js"></script>
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/js/search.js"></script>
+
+  
+  <script src="/js/main.js"></script>
   
 </body>
 </html>
