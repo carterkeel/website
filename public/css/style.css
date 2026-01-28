@@ -28,6 +28,38 @@ img {
 }
 
 /* =========================
+   GLOBAL SCROLLBAR
+========================= */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bg-tertiary) var(--color-bg);
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-bg-tertiary);
+  border-radius: 999px;
+  border: 2px solid var(--color-bg);
+  transition: background-color 0.25s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-highlighted);
+}
+
+
+/* =========================
    NAV SEARCH
 ========================= */
 
@@ -51,8 +83,7 @@ img {
 
 .nav-search input:focus {
   outline: none;
-  border-color: var(--text-highlighted);
-  box-shadow: 0 0 0 2px rgba(230, 56, 56, 0.25);
+  border-color: var(--color-bg-tertiary);
 }
 
 /* Results dropdown */
@@ -92,6 +123,26 @@ img {
   font-size: 0.7rem;
   color: var(--text-secondary);
 }
+
+/* =========================
+   HOMEPAGE SECTION HEADINGS
+========================= */
+
+main > section > h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 
 
 /* =========================
@@ -560,26 +611,29 @@ main > img {
 }
 
 /* =========================
-   EXPERIENCE CARDS
+   EMPLOYMENT & EDUCATION CARDS
 ========================= */
+
 .experience-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-tertiary);
+
+  /* 👇 difference starts here */
+  border-left: 4px solid var(--text-highlighted);
+  border-radius: 0;
+
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+
+  transition:
+    transform 0.25s ease,
+    border-left-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
-.experience-info {
-  flex: 1;
-  min-width: 250px;
-}
-
-.experience-date {
-  text-align: right;
-  white-space: nowrap;
-  color: var(--text-secondary);
-  margin: 0 !important;
+.experience-card:hover {
+  transform: translateX(4px);
+  
 }
 
 /* =========================
