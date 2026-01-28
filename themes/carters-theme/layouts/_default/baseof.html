@@ -74,6 +74,8 @@
 
   {{ block "main" . }}{{ end }}
 
+  {{ partial "footer.html" . }}
+  
   <!-- Main JS -->
   <script src="{{ "js/main.js" | relURL }}"></script>
 

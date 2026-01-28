@@ -175,4 +175,33 @@ params:
       submit:
         label: "Send Message"
 
+  footer:
+    heading: "Connect with me"
+    copyright: "© Copyright License 2026"
+    madeWith: "Made with Carter's Theme"
+
+    socials:
+      - name: "LinkedIn"
+        url: "https://linkedin.com/in/yourusername"
+        icon: "/images/icons/linkedin.png"
+      
+      - name: "GitHub"
+        url: "https://github.com/yourusername"
+        icon: "/images/icons/github.png"
+
+      - name: "YouTube"
+        url: "https://github.com/yourusername"
+        icon: "/images/icons/youtube.png"
+
+      - name: "Instagram"
+        url: "https://github.com/yourusername"
+        icon: "/images/icons/instagram.png"
+
+      - name: "Twitter"
+        url: "https://x.com/yourusername"
+        icon: "/images/icons/twitter.png"
+
+      - name: "TikTok"
+        url: "https://x.com/yourusername"
+        icon: "/images/icons/tiktok.png"
 
