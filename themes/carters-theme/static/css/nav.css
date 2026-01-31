@@ -129,7 +129,8 @@
   }
 
   .nav-menu.active {
-    max-height: 300px;
+    max-height: 50vh;
+    overflow-y: auto;
   }
 
   .nav-menu li {
