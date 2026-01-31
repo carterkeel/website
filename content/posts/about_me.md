@@ -1,17 +1,19 @@
 ---
-title: "From Content Creation to Cybersecurity: The Journey of Carter Keel"
+title: 'From Content Creation to Cybersecurity: The Journey of Carter Keel'
+description: Who is Carter and what does he do?
+image: /images/about_me.webp
 date: 2025-05-26
 draft: false
-author: "Carter Keel"
 tags:
   - about
-summary: "Growing from content creation to cybersecurity."
-thumbnail: "/images/content/about_me.webp"
-description: "Who is Carter and what does he do?"
+summary: Growing from content creation to cybersecurity.
+author: Carter Keel
+thumbnail: /images/content/about_me.webp
 layout: single
 ---
 
 # From Content Creation to Cybersecurity
+
 ---
 My name is Carter Keel. I am originally from both Florida and California, where my family moved when I was young to start a church. I was homeschooled for nine years while living in San Francisco, where I developed a curiosity for different places and a love for trying new things.
 
