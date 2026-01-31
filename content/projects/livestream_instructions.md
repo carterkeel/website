@@ -7,8 +7,8 @@ draft: false
 tags:
   - documentation
   - livestream
-summary: How to setup and run the church livestream.
 author: Carter Keel
+summary: How to setup and run the church livestream.
 layout: single
 thumbnail: /images/content/stream_setup.webp
 ---
@@ -20,7 +20,7 @@ thumbnail: /images/content/stream_setup.webp
 - Retrieve two black bags, the smaller tan camera bag, and the tripod.
 - Bring all bags to the sound booth (located at the 8th row of the stands).
 
-![Backpack](/static/livestream_setup_intructions/backpack.webp)
+![Backpack](/images/backpack.webp)
 
 ## 2. Stage-Side Setup
 
@@ -31,9 +31,9 @@ thumbnail: /images/content/stream_setup.webp
     - Run the other end to the black box pictured in the instructions.
 - Add tape to secure all cable runs.
 
-![Macbook cables](/static/livestream_setup_intructions/macbook_cables.webp)
+![Macbook cables](/images/macbook_cables.webp)
 
-![HDMI BMD](/static/livestream_setup_intructions/hdmi_bmd.webp)
+![HDMI BMD](/images/hdmi_bmd.webp)
 
 ## 3. Sound Booth Setup
 
@@ -42,13 +42,13 @@ thumbnail: /images/content/stream_setup.webp
 - Log in using the provided credentials.
 - Connect to the PSC Visitor Wi-Fi network.
 
-![Power strip](/static/livestream_setup_intructions/power_strip.webp)
+![Power strip](/images/power_strip.webp)
 
 ## Tripod Setup
 
-![Tripod](/static/livestream_setup_intructions/tripod.webp)
+![Tripod](/images/tripod.webp)
 
-![Tripod side](/static/livestream_setup_intructions/tripod_side.webp)
+![Tripod side](/images/tripod_side.webp)
 
 ### HDMI and USB Connections
 
@@ -57,7 +57,7 @@ thumbnail: /images/content/stream_setup.webp
 - Plug the two USB-A cables from the USB-C adapter into the USB-C hub.
 - Grab the white charger cable and plug it into the Zoom recorder box.
 
-![Laptop cables](/static/livestream_setup_intructions/laptop_cables.webp)
+![Laptop cables](/images/laptop_cables.webp)
 
 ## 4. Camera Setup
 
@@ -70,14 +70,14 @@ thumbnail: /images/content/stream_setup.webp
 - Press OK to all prompts during startup.
 - After confirming all prompts, remove the lens cap.
 
-![Camera](/static/livestream_setup_intructions/camera.webp)
+![Camera](/images/camera.webp)
 
 ### Camera Zoom and Settings
 
 - Use the ridged dial at the center of the lens to zoom in or out.
 - Hold the Power button on the Zoom recorder, select USB Audio I/F, then choose PC/Mac, and then Linear.
 
-![Zoom recorder](/static/livestream_setup_intructions/zoom_recorder.webp)
+![Zoom recorder](/images/zoom_recorder.webp)
 
 ### Camera-to-Computer Connections
 
@@ -86,20 +86,20 @@ thumbnail: /images/content/stream_setup.webp
 - Ensure the video receiver is connected to the other Cam Link and powered by a USB-C cable.
     - A solid blue light should appear when properly powered.
 
-![Laptop cables](/static/livestream_setup_intructions/laptop_cables.webp)
+![Laptop cables](/images/laptop_cables.webp)
 
-![USBC hub](/static/livestream_setup_intructions/usbc_hub.webp)
+![USBC hub](/images/usbc_hub.webp)
 
-![Camlinks](/static/livestream_setup_intructions/camlinks.webp)
+![Camlinks](/images/camlinks.webp)
 
 ### Audio Input
 
 - On the left side of the stage, near the exit sign, locate the XLR audio input cable.
 - Run this cable to the Zoom recorder box and plug it into input 2.
 
-![Audio cable laptop](/static/livestream_setup_intructions/audio_cable_laptop.webp)
+![Audio cable laptop](/images/audio_cable_laptop.webp)
 
-![Audio cable](/static/livestream_setup_intructions/audio_cable.webp)
+![Audio cable](/images/audio_cable.webp)
 
 ## 5. OBS Studio Configuration
 
