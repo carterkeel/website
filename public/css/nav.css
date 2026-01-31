@@ -1,4 +1,20 @@
 /* =========================
+   NAV LINK STATES
+========================= */
+
+nav a,
+nav a:visited {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--text-highlighted);
+}
+
+
+/* =========================
    NAV SEARCH
 ========================= */
 
@@ -148,7 +164,7 @@
   }
 
   .nav-menu li a:hover {
-    background-color: rgba(230, 56, 56, 0.1);
+    background-color: var(--color-bg-secondary);
     color: var(--text-highlighted);
   }
 

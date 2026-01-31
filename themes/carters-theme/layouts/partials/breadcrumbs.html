@@ -13,9 +13,11 @@
       </li>
     {{ end }}
 
-    <li>
-      <span class="breadcrumb-separator">/</span>
-      <span aria-current="page">{{ .Title }}</span>
-    </li>
+    {{ if not .IsSection }}
+      <li>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">{{ .Title }}</span>
+      </li>
+    {{ end }}
   </ul>
 </nav>
