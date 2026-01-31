@@ -7,8 +7,8 @@ draft: false
 tags:
   - documentation
   - homelab
-summary: Parts list and goals for a portable mini server rack.
 author: Carter Keel
+summary: Parts list and goals for a portable mini server rack.
 layout: single
 thumbnail: /images/content/server.webp
 ---
@@ -78,4 +78,4 @@ thumbnail: /images/content/server.webp
 
 ---
 
-![Server concept image](/static/images/server_concept.jpg)
+![Server concept image](/images/server_concept.jpg)
