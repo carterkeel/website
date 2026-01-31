@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="darkreader-lock" />
 
   <!-- Google Font: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +14,17 @@
     rel="stylesheet"
   >
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <!-- Theme CSS (split for organization) -->
+  <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/headings.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/layout.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/nav.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/hero.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/cards.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/content.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/contact.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/breadcrumbs.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/responsive.css" | relURL }}">
 
   <!-- Favicon -->
   {{ with .Site.Params.favicon }} <link rel="icon" type="image/webp" href="{{ . | relURL }}"> {{ end }}
@@ -21,6 +32,7 @@
 
   <style>
   :root {
+    color-scheme: dark;
     --color-bg: {{ .Site.Params.colors.bg }};
     --color-bg-secondary: {{ .Site.Params.colors.bgSecondary }};
     --color-bg-tertiary: {{ .Site.Params.colors.bgTertiary }};
@@ -49,7 +61,7 @@
   <input
     type="search"
     id="search-input"
-    placeholder="Search…"
+    placeholder="{{ .Site.Params.search.placeholder | default "Search" }}"
     aria-label="Search"
   />
   <div id="search-results"></div>

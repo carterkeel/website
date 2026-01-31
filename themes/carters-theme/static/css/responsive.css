@@ -1,0 +1,48 @@
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .social-links {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  h2 {
+    display: block;
+    text-align: center;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  article img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .experience-card {
+    flex-direction: column;
+  }
+
+  .experience-date {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 2.5rem 1.5rem 2rem;
+  }
+}

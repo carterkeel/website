@@ -10,6 +10,12 @@ outputs:
     - JSON
 
 params:
+  sectionTitles:
+    about: "About"
+    projects: "Projects"
+    experience: "Experience"
+    recentPosts: "Recent Posts"
+
   colors:
     bg: "#0f0f0f"
     bgSecondary: "#141414"
@@ -23,7 +29,7 @@ params:
   favicon: "/images/icons/fav.webp"
 
   search:
-    placeholder: "Search"
+    placeholder: "Search..."
     noResults: "No results found"
     labelPosts: "Post"
     labelProjects: "Project"
