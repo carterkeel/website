@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const navMenu = document.getElementById('navMenu');
 
   if (navToggle && navMenu) {
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
       navMenu.classList.toggle('active');
       navToggle.classList.toggle('active');
     });
@@ -16,6 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
       });
+    });
+
+    // Close menu when clicking outside (e.g. on main content)
+    document.addEventListener('click', function(e) {
+      if (navMenu.classList.contains('active') && !e.target.closest('header')) {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      }
     });
   }
 });

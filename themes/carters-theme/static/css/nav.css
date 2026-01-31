@@ -81,8 +81,9 @@
   transform-origin: center;
 }
 
+/* Hamburger → X: center lines then rotate */
 .nav-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+  transform: translateY(7px) rotate(45deg);
 }
 
 .nav-toggle.active span:nth-child(2) {
@@ -90,7 +91,7 @@
 }
 
 .nav-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -99,14 +100,22 @@
   }
 
   nav {
-    flex-wrap: wrap;
+    position: relative;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
   }
 
+  /* Dropdown below nav bar; full width so it never wraps under logo */
   .nav-menu {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     background: rgba(15, 15, 15, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-bg-tertiary);
@@ -116,6 +125,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    z-index: 50;
   }
 
   .nav-menu.active {
@@ -124,6 +134,10 @@
 
   .nav-menu li {
     border-bottom: 1px solid var(--color-bg-tertiary);
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
   }
 
   .nav-menu li a {
@@ -135,5 +149,17 @@
   .nav-menu li a:hover {
     background-color: rgba(230, 56, 56, 0.1);
     color: var(--text-highlighted);
+  }
+
+  /* Shrink search on small screens so logo + search + hamburger fit in one row */
+  .nav-search {
+    min-width: 0;
+    flex: 1;
+    max-width: 140px;
+  }
+
+  .nav-search input {
+    width: 100%;
+    min-width: 0;
   }
 }

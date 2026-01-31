@@ -45,6 +45,7 @@ nav {
 .nav-logo img {
   height: 40px;
   width: auto;
+  border-radius: 0;
   transition: transform 0.3s ease;
 }
 
@@ -120,6 +121,7 @@ nav a:hover {
 .footer-socials img {
   width: 26px;
   height: 26px;
+  border-radius: 0;
 }
 
 .footer-socials img[src$=".svg"] {

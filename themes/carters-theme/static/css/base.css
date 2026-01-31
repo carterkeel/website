@@ -8,6 +8,15 @@
   scrollbar-color: var(--color-bg-tertiary) var(--color-bg);
 }
 
+/* Remove blue tap highlight on mobile (iOS/Android) */
+a,
+button,
+input,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
 html {
   color-scheme: dark;
   scroll-behavior: smooth;

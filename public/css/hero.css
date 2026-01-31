@@ -87,6 +87,7 @@ section:nth-of-type(2) ul li:hover {
 .social-links a img {
   width: 24px;
   height: 24px;
+  border-radius: 0;
 }
 
 .social-links a {
@@ -131,6 +132,7 @@ section:nth-of-type(2) ul li:hover {
 .partner-logo {
   height: 24px;
   width: auto;
+  border-radius: 0;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
