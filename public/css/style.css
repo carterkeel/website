@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* =========================
    INLINE HEADING DIVIDER
 ========================= */
@@ -223,6 +227,48 @@ section > h2::after,
   opacity: 0.9;
 }
 
+/* =========================
+   HOMEPAGE SECTION HEADINGS
+========================= */
+
+h2.mainPage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+/* Gradient ONLY on homepage h2 text */
+h2.mainPage > span {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Divider line */
+h2.mainPage::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-bg-tertiary);
+  opacity: 0.9;
+}
+
+/* Content headings (posts & projects) */
+main article h2,
+main article h3,
+main article h4 {
+  background: none;
+  -webkit-text-fill-color: unset;
+  color: var(--text-primary);
+}
 
 
 /* =========================
@@ -382,15 +428,43 @@ h4 {
   margin-top: 0;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+/* =========================
+   SECTION HEADINGS (GLOBAL)
+========================= */
+
+section > h2,
+.contactTitle p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* Gradient ONLY on the text */
+section > h2 > span,
+.contactTitle p > span {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  display: inline-block;
 }
+
+/* Divider line */
+section > h2::after,
+.contactTitle p::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-bg-tertiary);
+  opacity: 0.9;
+}
+
 
 /* =========================
    HERO / PROFILE LAYOUT
@@ -667,7 +741,7 @@ article:hover ul li {
   display: inline-block;
   padding: 0.75rem 2rem;
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-  color: #fff;
+  color: var(--text-primary);
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -678,6 +752,23 @@ article:hover ul li {
 .resume-button:hover {
   transform: translateY(-2px);
 }
+
+.resume-button:a {
+  color: var(--text-primary);
+}
+
+/* =========================
+   RESUME BUTTON – LOCK TEXT COLOR
+========================= */
+
+.resume-button,
+.resume-button:visited,
+.resume-button:hover,
+.resume-button:focus,
+.resume-button:active {
+  color: var(--text-primary) !important;
+}
+
 
 /* =========================
    SINGLE POST / PROJECT
@@ -776,14 +867,6 @@ h1 {
   color: var(--text-primary);
 }
 
-h2 {
-  font-size: 1.5rem;
-  background: linear-gradient(90deg, var(--gradient-end), var(--gradient-start));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 h3 {
   font-size: 1.25rem;
   color: var(--text-primary);
@@ -824,7 +907,7 @@ a {
 }
 
 a:hover {
-  color: var(--gradient-start);
+  color: var(--gradient-end);
 }
 
 a:visited {
@@ -1197,7 +1280,7 @@ p {
 .site-footer {
   border-top: 1px solid var(--color-bg-tertiary);
   background: var(--color-bg-secondary);
-  padding: 3rem 2rem 2rem;
+  padding: 0rem 0rem 1rem;
 }
 
 .footer-inner {

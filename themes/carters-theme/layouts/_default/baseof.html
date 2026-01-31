@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="{{ "icons/fav.webp" | relURL }}">
+  {{ with .Site.Params.favicon }} <link rel="icon" type="image/webp" href="{{ . | relURL }}"> {{ end }}
+
 
   <style>
   :root {
