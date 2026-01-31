@@ -1,14 +1,14 @@
 ---
 title: Best Times To Post Content
 description: Best times and days of the week to post.
-image: /images/content/best_times.webp
+image: /images/best_times.webp
 date: 2025-05-26
 draft: false
 tags:
   - socials
   - youtube
-summary: Best times and days of the week to post.
 author: Carter Keel
+summary: Best times and days of the week to post.
 layout: single
 thumbnail: /images/content/best_times.webp
 ---
