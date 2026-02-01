@@ -1,7 +1,7 @@
 ---
 title: YouTube Channel
-description: Published over 200+ videos and counting about IT, cybersecurity, and technology.
-image: /images/youtube_channel_thumb.png
+summary: Published over 200+ videos and counting about IT, cybersecurity, and technology.
+thumbnail: /images/youtube_channel_thumb.png
 date: 2026-02-01T17:11:00
 draft: false
 tags:

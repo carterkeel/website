@@ -1,5 +1,13 @@
 [
   {
+    "title": "YouTube Channel",
+    "summary": "Published over 200+ videos and counting about IT, cybersecurity, and technology.",
+    "tags": ["social","youtube","projects","cybersecurity","video","IT"],
+    "url": "/projects/youtube-channel/",
+    "type": "projects",
+    "thumbnail": "/images/youtube_channel_thumb.png"
+  },
+  {
     "title": "Livestream Setup Instructions",
     "summary": "How to setup and run the church livestream.",
     "tags": ["documentation","livestream"],

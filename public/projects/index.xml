@@ -6,8 +6,15 @@
     <description>Recent content in Projects on Carter Keel</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Feb 2026 17:11:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YouTube Channel</title>
+      <link>http://localhost:1313/projects/youtube-channel/</link>
+      <pubDate>Sun, 01 Feb 2026 17:11:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/youtube-channel/</guid>
+      <description>Published over 200+ videos and counting about IT, cybersecurity, and technology.</description>
+    </item>
     <item>
       <title>Livestream Setup Instructions</title>
       <link>http://localhost:1313/projects/livestream_instructions/</link>
