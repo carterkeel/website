@@ -6,7 +6,6 @@ date: 2026-02-01T17:11:00
 draft: false
 tags:
   - social
-  - youtube
   - projects
   - cybersecurity
   - video
