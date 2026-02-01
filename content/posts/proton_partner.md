@@ -1,7 +1,7 @@
 ---
 title: I Am Now a Proton Partner
-description: As of november 2025 I am now a partner with Proton.
-image: /images/proton_partner.webp
+summary: As of november 2025 I am now a partner with Proton.
+thumbnail: /images/proton_partner.webp
 date: 2025-11-15
 draft: false
 tags:
@@ -9,9 +9,9 @@ tags:
 categories:
   - Social Media
   - About Me
-summary: As of november 2025 I am now a partner with Proton.
 author: Carter Keel
-thumbnail: /images/content/proton_partner.webp
+image: /images/proton_partner.webp
+description: As of november 2025 I am now a partner with Proton.
 layout: single
 ---
 
