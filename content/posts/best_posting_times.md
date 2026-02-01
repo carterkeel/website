@@ -1,16 +1,16 @@
 ---
 title: Best Times To Post Content
-description: Best times and days of the week to post.
-image: /images/best_times.webp
+summary: Best times and days of the week to post.
+thumbnail: /images/best_times.webp
 date: 2025-05-26
 draft: false
 tags:
   - socials
   - youtube
 author: Carter Keel
-summary: Best times and days of the week to post.
+image: /images/best_times.webp
+description: Best times and days of the week to post.
 layout: single
-thumbnail: /images/content/best_times.webp
 ---
 
 # 📅 Best Times to Post on Instagram, YouTube, and LinkedIn (Central Time)
