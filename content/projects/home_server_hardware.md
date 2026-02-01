@@ -1,16 +1,16 @@
 ---
 title: Mini Server Hardware
-description: List of parts for my mini server.
-image: /images/server.webp
+summary: Parts list and goals for a portable mini server rack.
+thumbnail: /images/server.webp
 date: 2025-07-09
 draft: false
 tags:
   - documentation
   - homelab
 author: Carter Keel
-summary: Parts list and goals for a portable mini server rack.
+image: /images/server.webp
+description: List of parts for my mini server.
 layout: single
-thumbnail: /images/content/server.webp
 ---
 
 # A. 💫 Goals
