@@ -1,14 +1,14 @@
 ---
 title: 'From Content Creation to Cybersecurity: The Journey of Carter Keel'
-description: Who is Carter and what does he do?
-image: /images/about_me.webp
+summary: Growing from content creation to cybersecurity.
+thumbnail: /images/about_me.webp
 date: 2025-05-26
 draft: false
 tags:
   - about
-summary: Growing from content creation to cybersecurity.
 author: Carter Keel
-thumbnail: /images/content/about_me.webp
+image: /images/about_me.webp
+description: Who is Carter and what does he do?
 layout: single
 ---
 
