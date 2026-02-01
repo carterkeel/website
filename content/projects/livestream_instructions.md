@@ -1,16 +1,16 @@
 ---
 title: Livestream Setup Instructions
-description: How to setup and run the church livestream.
-image: /images/stream_setup.webp
+summary: How to setup and run the church livestream.
+thumbnail: /images/stream_setup.webp
 date: 2025-12-09
 draft: false
 tags:
   - documentation
   - livestream
 author: Carter Keel
-summary: How to setup and run the church livestream.
+image: /images/stream_setup.webp
+description: How to setup and run the church livestream.
 layout: single
-thumbnail: /images/content/stream_setup.webp
 ---
 
 # Livestream Setup Instructions
