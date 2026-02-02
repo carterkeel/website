@@ -1,0 +1,209 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "Carter Keel"
+
+theme: "carters-theme"
+
+outputs:
+  home:
+    - HTML
+    - JSON
+
+params:
+  sectionTitles:
+    about: "About"
+    projects: "Projects"
+    experience: "Experience"
+    recentPosts: "Recent Posts"
+
+  colors:
+    bg: "#0f0f0f"
+    bgSecondary: "#141414"
+    bgTertiary: "#2b2b31"
+    textPrimary: "#e2e2e2"
+    textSecondary: "#a1a1aa"
+    textHighlighted: "#e63838"
+    gradientStart: "#e711a7"
+    gradientEnd: "#d61717"
+
+  favicon: "/images/icons/fav.webp"
+
+  search:
+    placeholder: "Search..."
+    noResults: "No results found"
+    labelPosts: "Post"
+    labelProjects: "Project"
+
+  logo:
+    src: "/images/icons/fav.webp"
+    alt: "Site Logo"
+
+  nav:
+    - label: "Blog"
+      url: "/posts"
+    - label: "Projects"
+      url: "/projects"
+    - label: "Resume"
+      url: "/documents/carter_resume.pdf"
+    - label: "Contact"
+      url: "/#contact"
+  
+  landing:
+    name: "Hi, I'm Carter Keel"
+    roles:
+      - Cybersecurity
+      - IT
+      - Video
+
+    pfp: "/images/icons/pfp.webp"
+
+    aboutMe:
+      label: "About Me ->"
+      url: "/posts/about_me/"
+
+    partners:
+      - name: "Proton VPN"
+        image: "/images/icons/protonvpn.png"
+        url: "https://go.getproton.me/SH27U"
+
+    featuredProjects:
+      - "youtube-channel"
+      - "proxmox-homelab"
+      - "website"
+
+    links:
+      - label: "LinkedIn"
+        icon: "/images/icons/linkedin.png"
+        url: "https://www.linkedin.com/in/carterkeel/"
+      - label: "GitHub"
+        icon: "/images/icons/github.png"
+        url: "https://github.com/carterkeel"
+      - label: "YouTube"
+        icon: "/images/icons/youtube.png"
+        url: "https://www.youtube.com/@RandomButCool"
+      - label: "Instagram"
+        icon: "/images/icons/instagram.png"
+        url: "https://www.instagram.com/carter.keel.me/"
+      - label: "Twitter"
+        icon: "/images/icons/twitter.png"
+        url: "https://x.com/carterkeelme"
+      - label: "TikTok"
+        icon: "/images/icons/tiktok.png"
+        url: "https://www.tiktok.com/@carter.keel.me"
+
+  about:
+    # intro: >
+    # random intro
+
+    sections:
+      - title: "Cybersecurity"
+        description: >
+          Cybersecurity analyst with experience in open-source intelligence,
+          account security, and collegiate red-team / white-hat competitions.
+          I also create educational cybersecurity content online.
+        skills:
+          - Wireshark
+          - Microsoft Group Policy Editor
+          - VPN Configuration
+          - OSINT
+          - C++
+          - Java
+
+      - title: "IT & Infrastructure"
+        description: >
+          IT specialist with experience in support, server management, and
+          network configuration using industry-standard equipment and software.
+        skills:
+          - Proxmox
+          - Microsoft Windows
+          - macOS
+          - Ubuntu Server
+          - Unifi Hardware
+          - PC Building
+
+      - title: "Video & Media"
+        description: >
+          Professional experience in video editing, videography, and live video
+          production for streaming.
+        skills:
+          - Adobe Premiere Pro
+          - Davinci Resolve
+          - OBS Studio
+          - vMix
+          - Adobe Photoshop
+          - Photopea
+
+  experience:
+    employment:
+      - company: "Be A Light Productions"
+        location: "Pensacola, FL"
+        startDate: "Oct 2022"
+        endDate: "Current"
+      - company: "Storypoint church"
+        location: "Gulf Breeze, FL"
+        startDate: "Sept 2021"
+        endDate: "Dec 2023"
+    education:
+      - degree: "Bachelor of Science, Cybersecurity"
+        school: "University of West Florida"
+        location: "Pensacola, FL"
+        expected: "2026"
+      - degree: "Associate of Arts"
+        school: "Pensacola State College"
+        location: "Pensacola FL"
+    resume:
+      label: "Résumé"
+      url: "/resume"
+
+  contact:
+    id: "contact"
+    title: "Contact"
+    subtitle: "I am open for opportunities."
+    form:
+      action: "https://formspree.io/f/mldwzvgk"
+      method: "POST"
+      fields:
+        - type: "text"
+          name: "name"
+          placeholder: "Your Name"
+          required: true
+
+        - type: "email"
+          name: "email"
+          placeholder: "Your Email"
+          required: true
+
+        - type: "textarea"
+          name: "message"
+          placeholder: "Your Message"
+          rows: 5
+          required: true
+
+      submit:
+        label: "Send Message"
+
+  footer:
+    heading: "Let's connect:"
+    copyright: "© Copyright License 2026"
+    madeWith: "Made with Carter's Theme"
+
+    socials:
+      - label: "LinkedIn"
+        icon: "/images/icons/linkedin.png"
+        url: "https://www.linkedin.com/in/carterkeel/"
+      - label: "GitHub"
+        icon: "/images/icons/github.png"
+        url: "https://github.com/carterkeel"
+      - label: "YouTube"
+        icon: "/images/icons/youtube.png"
+        url: "https://www.youtube.com/@RandomButCool"
+      - label: "Instagram"
+        icon: "/images/icons/instagram.png"
+        url: "https://www.instagram.com/carter.keel.me/"
+      - label: "Twitter"
+        icon: "/images/icons/twitter.png"
+        url: "https://x.com/carterkeelme"
+      - label: "TikTok"
+        icon: "/images/icons/tiktok.png"
+        url: "https://www.tiktok.com/@carter.keel.me"
+

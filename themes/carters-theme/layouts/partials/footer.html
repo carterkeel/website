@@ -1,0 +1,20 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <h2>{{ .Site.Params.footer.heading }}</h2>
+
+    <ul class="footer-socials">
+      {{ range .Site.Params.footer.socials }}
+        <li>
+          <a href="{{ .url }}" aria-label="{{ .name }}" target="_blank" rel="noopener">
+            <img src="{{ .icon }}" alt="{{ .name }} logo">
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+    <div class="footer-meta">
+      <p>{{ .Site.Params.footer.copyright }}</p>
+      <p class="footer-made-with">{{ .Site.Params.footer.madeWith }}</p>
+    </div>
+  </div>
+</footer>

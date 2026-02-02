@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Youtube on Carter Keel</title>
+    <link>http://localhost:1313/tags/youtube/</link>
+    <description>Recent content in Youtube on Carter Keel</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Feb 2026 17:11:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YouTube Channel</title>
+      <link>http://localhost:1313/projects/youtube-channel/</link>
+      <pubDate>Sun, 01 Feb 2026 17:11:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/youtube-channel/</guid>
+      <description>Published over 200+ videos and counting about IT, cybersecurity, and technology.</description>
+    </item>
+    <item>
+      <title>Best Times To Post Content</title>
+      <link>http://localhost:1313/posts/best_posting_times/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/best_posting_times/</guid>
+      <description>Best times and days of the week to post.</description>
+    </item>
+  </channel>
+</rss>

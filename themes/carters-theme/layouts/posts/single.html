@@ -1,0 +1,45 @@
+{{ define "main" }}
+<main>
+
+  
+  {{ partial "breadcrumbs.html" . }}
+  
+  {{ with .Params.tags }}
+    <ul>
+      {{ range . }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  
+  {{ with .Params.thumbnail }}
+  <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
+  {{ end }}
+  
+  
+  <h1>{{ .Title }}</h1>
+  <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
+
+
+  {{ .Content }}
+
+  <a href="/posts/" class=""> <- Back to posts</a>
+
+  <script src="https://giscus.app/client.js"
+                    data-repo="carterkeel/blog-comments"
+                    data-repo-id="R_kgDOPBXEBA"
+                    data-category="General"
+                    data-category-id="DIC_kwDOPBXEBM4Cr84d"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="dark"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+  </script>
+
+</main>
+{{ end }}

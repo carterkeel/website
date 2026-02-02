@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carter Keel</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Carter Keel</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Livestream Setup Instructions</title>
+      <link>http://localhost:1313/projects/livestream_instructions/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/livestream_instructions/</guid>
+      <description>How to setup and run the church livestream.</description>
+    </item>
+    <item>
+      <title>I Am Now a Proton Partner</title>
+      <link>http://localhost:1313/posts/proton_partner/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/proton_partner/</guid>
+      <description>As of november 2025 I am now a partner with Proton.</description>
+    </item>
+    <item>
+      <title>Mini Server Hardware</title>
+      <link>http://localhost:1313/projects/home_server_hardware/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/home_server_hardware/</guid>
+      <description>Parts list and goals for a portable mini server rack.</description>
+    </item>
+    <item>
+      <title>Best Times To Post Content</title>
+      <link>http://localhost:1313/posts/best_posting_times/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/best_posting_times/</guid>
+      <description>Best times and days of the week to post.</description>
+    </item>
+    <item>
+      <title>From Content Creation to Cybersecurity: The Journey of Carter Keel</title>
+      <link>http://localhost:1313/posts/about_me/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/about_me/</guid>
+      <description>Growing from content creation to cybersecurity.</description>
+    </item>
+  </channel>
+</rss>

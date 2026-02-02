@@ -1,0 +1,152 @@
+/* =========================
+   LAYOUT
+========================= */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-bg-tertiary);
+}
+
+nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover img {
+  transform: scale(1.05);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--text-primary);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  border-top: 1px solid var(--color-bg-tertiary);
+  background: var(--color-bg-secondary);
+  padding: 0rem 0rem 1rem;
+}
+
+.footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-footer h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.footer-socials img {
+  width: 26px;
+  height: 26px;
+  border-radius: 0;
+}
+
+.footer-socials img[src$=".svg"] {
+  filter: invert(100%) sepia(0%) saturate(0%) brightness(0.85);
+}
+
+.footer-socials a:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+.footer-meta {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.footer-meta p {
+  margin: 10px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.footer-made-with {
+  color: var(--text-secondary);
+  font-style: italic;
+}

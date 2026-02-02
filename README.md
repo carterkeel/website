@@ -1,17 +1,23 @@
-# 🌐 Portfolio Website Source Code
+# Hugo Static Site Template
 
-This is the full source code for my personal portfolio website.
+This is a simple, lightweight static website built with **HTML and CSS**, powered by the **Hugo** static site generator.
 
-## 🔓 Usage & License
+I designed this site as a **reusable template**, so feel free to use it as a starting point for your own project, tweak it, or learn from how it’s put together.
 
-Feel free to **use, modify, and build on it** for your own site or project.  
-No attribution is required, but a shout-out is always appreciated!
+The website is very much a **work in progress** and is continually evolving as I refine the design, structure, and features over time. Improvements and experiments happen regularly.
 
-## ⚙️ Built With
+You’re welcome to download the project, explore the source code, and adapt it to your needs.
 
-- HTML, CSS, JavaScript
+## Features
+- Built with Hugo
+- Simple HTML & CSS
+- Easy to customize and extend
+- Suitable as a personal site or starter template
 
----
+## Getting Started
+Clone the repository and check out the `src` to see how everything is structured.
 
-— Carter Keel
-
+```bash
+git clone <repo-url>
+cd <repo-name>
+hugo server
