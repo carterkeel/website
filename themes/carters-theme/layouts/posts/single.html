@@ -4,6 +4,14 @@
   
   {{ partial "breadcrumbs.html" . }}
   
+  {{ with .Params.tags }}
+    <ul>
+      {{ range . }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  
   {{ with .Params.thumbnail }}
   <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
   {{ end }}
@@ -12,13 +20,6 @@
   <h1>{{ .Title }}</h1>
   <p><small>{{ .Date.Format "January 2, 2006" }}</small></p>
 
-  {{ with .Params.tags }}
-    <ul>
-      {{ range . }}
-        <li>{{ . }}</li>
-      {{ end }}
-    </ul>
-  {{ end }}
 
   {{ .Content }}
 

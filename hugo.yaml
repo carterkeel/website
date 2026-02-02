@@ -67,8 +67,9 @@ params:
         url: "https://go.getproton.me/SH27U"
 
     featuredProjects:
-      - "home_server_hardware"
-      - "livestream_instructions"
+      - "youtube-channel"
+      - "proxmox-homelab"
+      - "website"
 
     links:
       - label: "LinkedIn"
