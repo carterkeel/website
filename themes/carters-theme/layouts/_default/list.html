@@ -22,12 +22,17 @@
           <p>{{ .Summary }}</p>
 
           {{ with .Params.tags }}
-            <ul>
-              {{ range . }}
-                <li>{{ . }}</li>
-              {{ end }}
+          <ul>
+          {{ range first 3 . }}
+            <li>{{ . }}</li>
+          {{ end }}
+
+          {{ if gt (len .) 3 }}
+            <li class="tag-more">+{{ sub (len .) 3 }} more</li>
+          {{ end }}
             </ul>
           {{ end }}
+
         </div>
 
       </article>

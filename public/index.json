@@ -13,7 +13,7 @@
     "tags": ["documentation","livestream"],
     "url": "/projects/livestream_instructions/",
     "type": "projects",
-    "thumbnail": "/images/content/stream_setup.webp"
+    "thumbnail": "/images/stream_setup.webp"
   },
   {
     "title": "I Am Now a Proton Partner",
@@ -21,7 +21,7 @@
     "tags": ["about"],
     "url": "/posts/proton_partner/",
     "type": "posts",
-    "thumbnail": "/images/content/proton_partner.webp"
+    "thumbnail": "/images/proton_partner.webp"
   },
   {
     "title": "Mini Server Hardware",
@@ -29,7 +29,7 @@
     "tags": ["documentation","homelab"],
     "url": "/projects/home_server_hardware/",
     "type": "projects",
-    "thumbnail": "/images/content/server.webp"
+    "thumbnail": "/images/server.webp"
   },
   {
     "title": "Best Times To Post Content",
@@ -37,7 +37,7 @@
     "tags": ["socials","youtube"],
     "url": "/posts/best_posting_times/",
     "type": "posts",
-    "thumbnail": "/images/content/best_times.webp"
+    "thumbnail": "/images/best_times.webp"
   },
   {
     "title": "From Content Creation to Cybersecurity: The Journey of Carter Keel",
@@ -45,5 +45,5 @@
     "tags": ["about"],
     "url": "/posts/about_me/",
     "type": "posts",
-    "thumbnail": "/images/content/about_me.webp"
+    "thumbnail": "/images/about_me.webp"
   }]
