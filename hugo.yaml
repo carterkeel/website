@@ -10,6 +10,12 @@ outputs:
     - JSON
 
 params:
+  headerTitle: "Carter Keel's Portfolio And Blog"
+  favicon: "/images/icons/fav.webp"
+  author: "Carter Keel"
+  description: "My personal portfolio website showcasing my skills in cybersecurity, IT, and video production."
+  image: "/images/icons/website_preview.webp"
+
   sectionTitles:
     about: "About"
     projects: "Projects"
@@ -26,7 +32,6 @@ params:
     gradientStart: "#e711a7"
     gradientEnd: "#d61717"
 
-  favicon: "/images/icons/fav.webp"
 
   search:
     placeholder: "Search..."

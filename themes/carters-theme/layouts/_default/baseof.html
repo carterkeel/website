@@ -2,6 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+  {{/* SEO and Metadata */}}
+  {{ $description := .Description | default site.Params.description }}
+  <meta name="description" content="{{ $description }}">
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{/* Social Media Sharing */}}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ $ogImage := .Params.image | default site.Params.image }}
+  {{ with $ogImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  {{ with $ogImage }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark" />
   <meta name="darkreader-lock" />
