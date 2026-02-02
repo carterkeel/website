@@ -1,5 +1,5 @@
 ---
-title: Website
+title: Portfolio Website
 summary: My personal website I created using the Hugo framework.
 thumbnail: /images/website_thumbnail.webp
 date: 2026-02-01T19:33:00
