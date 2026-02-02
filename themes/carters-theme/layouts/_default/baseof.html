@@ -21,18 +21,17 @@
   <meta name="twitter:description" content="{{ $description }}">
   {{ with $ogImage }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}  */}}
 
-  <!-- Open Graph (Facebook, LinkedIn, Discord, WhatsApp, etc.) -->
-  <meta property="og:title" content="Your Page Title">
-  <meta property="og:description" content="Your page description here">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yoursite.com/page-url">
-  <meta property="og:image" content="https://yoursite.com/images/preview-image.jpg">
+  <meta property="og:title" content="{{ .Title | default site.Params.title }}">
+  <meta property="og:description" content="{{ .Description | default site.Params.description }}">
+  <meta property="og:type" content="{{ site.Params.ogType }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ site.Params.image | absURL }}">
 
-  <!-- Twitter/X Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Your Page Title">
-  <meta name="twitter:description" content="Your page description here">
-  <meta name="twitter:image" content="https://yoursite.com/images/preview-image.jpg">
+  <meta name="twitter:card" content="{{ site.Params.twitterCard }}">
+  <meta name="twitter:title" content="{{ .Title | default site.Params.title }}">
+  <meta name="twitter:description" content="{{ .Description | default site.Params.description }}">
+  <meta name="twitter:image" content="{{ site.Params.image | absURL }}">
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark" />
