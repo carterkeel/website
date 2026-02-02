@@ -15,6 +15,40 @@ main > img {
 }
 
 /* =========================
+   SINGLE PAGE TAGS (FIX)
+========================= */
+
+/* Target ONLY the tag list directly under the title */
+main > ul {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.2rem;
+  padding: .5rem 3rem;
+  margin: 1.25rem 0 2rem;
+  background-color: var(--color-bg-secondary);
+  border-radius: 15px;
+  border: 1px var(--color-bg-tertiary);
+  border: 1px solid var(--color-bg-tertiary);
+}
+
+main > ul > li {
+  color: var(--text-secondary);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  main > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
    PROSE: CODE, TABLES, ETC.
 ========================= */
 

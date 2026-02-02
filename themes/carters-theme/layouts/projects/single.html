@@ -2,14 +2,6 @@
 <main>
 
   {{ partial "breadcrumbs.html" . }}
-
-
-  {{ with .Params.thumbnail }}
-    <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
-  {{ end }}
-
-  <h1>{{ .Title }}</h1>
-
   {{ with .Params.tags }}
     <ul>
       {{ range . }}
@@ -18,6 +10,15 @@
     </ul>
   {{ end }}
 
+  {{ with .Params.thumbnail }}
+  <img src="{{ . }}" alt="{{ $.Title }} thumbnail">
+  {{ end }}
+  
+  <h1>{{ .Title }}</h1>
+  
+  
+
+  
   {{ .Content }}
 
   <a href="/projects/" class=""> <- Back to projects</a>
