@@ -3,7 +3,7 @@ title: Livestream Setup Instructions
 summary: How to setup and run the church livestream.
 thumbnail: /images/stream_setup.webp
 date: 2025-12-09
-draft: false
+draft: true
 tags:
   - documentation
   - livestream

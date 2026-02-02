@@ -3,7 +3,7 @@ title: Mini Server Hardware
 summary: Parts list and goals for a portable mini server rack.
 thumbnail: /images/server.webp
 date: 2025-07-09
-draft: false
+draft: true
 tags:
   - documentation
   - homelab
