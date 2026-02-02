@@ -14,7 +14,7 @@ params:
   favicon: "/images/icons/fav.webp"
   author: "Carter Keel"
   description: "My personal portfolio website showcasing my skills in cybersecurity, IT, and video production."
-  image: "/images/icons/website_preview.webp"
+  image: "/images/icons/website_preview.jpg"
 
   sectionTitles:
     about: "About"
