@@ -128,31 +128,10 @@
       <description></description>
     </item>
     <item>
-      <title>Documentation</title>
-      <link>http://localhost:1313/tags/documentation/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/documentation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Livestream</title>
-      <link>http://localhost:1313/tags/livestream/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/livestream/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>About</title>
       <link>http://localhost:1313/tags/about/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/about/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Socials</title>
-      <link>http://localhost:1313/tags/socials/</link>
-      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/socials/</guid>
       <description></description>
     </item>
   </channel>

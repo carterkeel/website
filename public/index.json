@@ -24,36 +24,12 @@
     "thumbnail": "/images/youtube_thumbnail.jpg"
   },
   {
-    "title": "Livestream Setup Instructions",
-    "summary": "How to setup and run the church livestream.",
-    "tags": ["documentation","livestream"],
-    "url": "/projects/livestream_instructions/",
-    "type": "projects",
-    "thumbnail": "/images/stream_setup.webp"
-  },
-  {
     "title": "I Am Now a Proton Partner",
     "summary": "As of november 2025 I am now a partner with Proton.",
     "tags": ["about"],
     "url": "/posts/proton_partner/",
     "type": "posts",
     "thumbnail": "/images/proton_partner.webp"
-  },
-  {
-    "title": "Mini Server Hardware",
-    "summary": "Parts list and goals for a portable mini server rack.",
-    "tags": ["documentation","homelab"],
-    "url": "/projects/home_server_hardware/",
-    "type": "projects",
-    "thumbnail": "/images/server.webp"
-  },
-  {
-    "title": "Best Times To Post Content",
-    "summary": "Best times and days of the week to post.",
-    "tags": ["socials","youtube"],
-    "url": "/posts/best_posting_times/",
-    "type": "posts",
-    "thumbnail": "/images/best_times.webp"
   },
   {
     "title": "From Content Creation to Cybersecurity: The Journey of Carter Keel",

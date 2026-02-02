@@ -9,7 +9,7 @@
   <link rel="canonical" href="{{ .Permalink }}">
 
   {{/* Social Media Sharing */}}
-  <meta property="og:title" content="{{ .Title }}">
+  {{/*  <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ $description }}">
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -19,7 +19,20 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ $description }}">
-  {{ with $ogImage }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+  {{ with $ogImage }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}  */}}
+
+  <!-- Open Graph (Facebook, LinkedIn, Discord, WhatsApp, etc.) -->
+  <meta property="og:title" content="Your Page Title">
+  <meta property="og:description" content="Your page description here">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/page-url">
+  <meta property="og:image" content="https://yoursite.com/images/preview-image.jpg">
+
+  <!-- Twitter/X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Page Title">
+  <meta name="twitter:description" content="Your page description here">
+  <meta name="twitter:image" content="https://yoursite.com/images/preview-image.jpg">
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark" />

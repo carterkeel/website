@@ -29,19 +29,5 @@
       <guid>http://localhost:1313/projects/youtube-channel/</guid>
       <description>Published over 200+ videos and counting about IT, cybersecurity, and technology.</description>
     </item>
-    <item>
-      <title>Livestream Setup Instructions</title>
-      <link>http://localhost:1313/projects/livestream_instructions/</link>
-      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/livestream_instructions/</guid>
-      <description>How to setup and run the church livestream.</description>
-    </item>
-    <item>
-      <title>Mini Server Hardware</title>
-      <link>http://localhost:1313/projects/home_server_hardware/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/home_server_hardware/</guid>
-      <description>Parts list and goals for a portable mini server rack.</description>
-    </item>
   </channel>
 </rss>
