@@ -22,9 +22,9 @@ For my personal setup, I use an industry‑standard hypervisor called [Proxmox](
 
 #### Self-Hosted Services
 
-I mostly use my homelab for self‑hosting apps like [Audiobookshelf](https://www.audiobookshelf.org/?utm_source=chatgpt.com), which is like my own local Audible that isn’t connected to Amazon meaning I can still listen to my audiobooks if Audible removes a book or goes offline. Audiobookshelf is a self‑hosted audiobook and podcast server designed to organize and stream your personal collection.
+I mostly use my homelab for self‑hosting apps like [Audiobookshelf](https://www.audiobookshelf.org/), which is like my own local Audible that isn’t connected to Amazon meaning I can still listen to my audiobooks if Audible removes a book or goes offline. Audiobookshelf is a self‑hosted audiobook and podcast server designed to organize and stream your personal collection.
 
-Similar to Audiobookshelf, [Immich](https://immich.app/?utm_source=chatgpt.com) is a self‑hosted app, but instead of storing audiobooks, Immich stores my photos like iCloud or Google Photos. Immich helps you browse, organize, and back up your photos and videos from your own server. The best part about Immich is that in the client‑side app, photos from your gallery automatically sync when connected to your local network. I would recommend watching my video below on self hosted apps I can't live without.
+Similar to Audiobookshelf, [Immich](https://immich.app/) is a self‑hosted app, but instead of storing audiobooks, Immich stores my photos like iCloud or Google Photos. Immich helps you browse, organize, and back up your photos and videos from your own server. The best part about Immich is that in the client‑side app, photos from your gallery automatically sync when connected to your local network. I would recommend watching my video below on self hosted apps I can't live without.
 
 {{< youtube 3whYXmRJcAE >}}
 
