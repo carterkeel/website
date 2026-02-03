@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cellular on Carter Keel</title>
+    <link>http://localhost:1313/tags/cellular/</link>
+    <description>Recent content in Cellular on Carter Keel</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Feb 2026 00:38:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cellular/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>eSIMs Are NOT Better</title>
+      <link>http://localhost:1313/posts/esims-are-not-better/</link>
+      <pubDate>Tue, 03 Feb 2026 00:38:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/esims-are-not-better/</guid>
+      <description>Despite what companies say eSIM is not all that.</description>
+    </item>
+  </channel>
+</rss>
