@@ -66,10 +66,10 @@ params:
       label: "About Me ->"
       url: "/posts/about_me/"
 
-    partners:
-      - name: "Proton VPN"
-        image: "/images/icons/protonvpn.png"
-        url: "https://go.getproton.me/SH27U"
+    # partners:
+    #   - name: "Proton VPN"
+    #     image: "/images/icons/protonvpn.png"
+    #     url: "https://go.getproton.me/SH27U"
 
     featuredProjects:
       - "youtube-channel"
