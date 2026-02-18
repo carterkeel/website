@@ -108,7 +108,11 @@
       <ul class="nav-menu" id="navMenu">
         {{ range . }}
           <li>
-            <a href="{{ .url }}">{{ .label }}</a>
+            {{ if eq .label "Resume" }}
+              <a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>
+            {{ else }}
+              <a href="{{ .url }}">{{ .label }}</a>
+            {{ end }}
           </li>
         {{ end }}
       </ul>
