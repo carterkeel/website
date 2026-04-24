@@ -140,10 +140,18 @@ params:
 
   experience:
     employment:
+      - company: "Broadwing"
+        location: "Remote"
+        startDate: "Mar 2026"
+        endDate: "Current"
+      - company: "Kaiser Media Group"
+        location: "Pensacola, FL"
+        startDate: "Oct 2025"
+        endDate: "Current"
       - company: "Be A Light Productions"
         location: "Pensacola, FL"
         startDate: "Oct 2022"
-        endDate: "Current"
+        endDate: "Oct 2025"
       - company: "Storypoint church"
         location: "Gulf Breeze, FL"
         startDate: "Sept 2021"
@@ -158,7 +166,7 @@ params:
         location: "Pensacola FL"
     resume:
       label: "Résumé"
-      url: "/resume"
+      url: "/documents/carter_resume.pdf"
 
   contact:
     id: "contact"
