@@ -1,0 +1,34 @@
+/* =========================
+   SECTION HEADINGS (single source)
+========================= */
+
+/* All section h2: flex row + divider line + gradient text on span */
+main > section > h2,
+h2.mainPage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+h2.mainPage > span {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+main > section > h2::after,
+h2.mainPage::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-bg-tertiary);
+  opacity: 0.9;
+}

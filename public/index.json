@@ -1,0 +1,49 @@
+[
+  {
+    "title": "eSIMs Are NOT Better",
+    "summary": "Despite what companies say eSIM is not all that.",
+    "tags": ["tech","cellular","sms","youtube","sim","esim"],
+    "url": "/posts/esims-are-not-better/",
+    "type": "posts",
+    "thumbnail": "/images/post_thumbnails_esim.jpg"
+  },
+  {
+    "title": "Proxmox Homelab",
+    "summary": "The creation of Batman (the name of my homelab).",
+    "tags": ["homelab","proxmox","dns","users","selfhost","networking"],
+    "url": "/projects/proxmox-homelab/",
+    "type": "projects",
+    "thumbnail": "/images/post_thumbnail_homelab.webp"
+  },
+  {
+    "title": "Portfolio Website",
+    "summary": "My personal website I created using the Hugo framework.",
+    "tags": ["html","css","js","git","dns","cloudflare"],
+    "url": "/projects/website/",
+    "type": "projects",
+    "thumbnail": "/images/website_thumbnail.webp"
+  },
+  {
+    "title": "YouTube Channel",
+    "summary": "Published over 200+ videos and counting about IT, cybersecurity, and technology.",
+    "tags": ["social","youtube","projects","cybersecurity","video","IT"],
+    "url": "/projects/youtube-channel/",
+    "type": "projects",
+    "thumbnail": "/images/youtube_thumbnail.jpg"
+  },
+  {
+    "title": "I Am Now a Proton Partner",
+    "summary": "As of november 2025 I am now a partner with Proton.",
+    "tags": ["about"],
+    "url": "/posts/proton_partner/",
+    "type": "posts",
+    "thumbnail": "/images/proton_partner.webp"
+  },
+  {
+    "title": "From Content Creation to Cybersecurity: The Journey of Carter Keel",
+    "summary": "Growing from content creation to cybersecurity.",
+    "tags": ["about"],
+    "url": "/posts/about_me/",
+    "type": "posts",
+    "thumbnail": "/images/about_me.webp"
+  }]

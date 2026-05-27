@@ -1,0 +1,88 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contactMeContainer {
+  max-width: 800px;
+  margin: 0 auto 6rem;
+}
+
+.section-subtitle {
+  margin: 0.5rem 0 2rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.container-readable {
+  background: var(--color-bg-secondary);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-bg-tertiary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--color-bg);
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--text-highlighted);
+  box-shadow: 0 0 0 2px rgba(230, 56, 56, 0.2);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-primary {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(230, 56, 56, 0.3);
+}
