@@ -1,6 +1,7 @@
 CLAUDE.md
 
-# Hugo build artifacts
-public/
+# Hugo build artifacts (track the folder, ignore contents)
+public/*
+!public/.gitkeep
 .hugo_build.lock
 resources/
