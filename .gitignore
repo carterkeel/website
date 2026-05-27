@@ -1,0 +1,6 @@
+CLAUDE.md
+
+# Hugo build artifacts
+public/
+.hugo_build.lock
+resources/

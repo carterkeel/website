@@ -86,18 +86,19 @@ article ul {
 }
 
 article ul li {
-  background: var(--color-bg-tertiary);
+  background: transparent;
   color: var(--text-secondary);
   padding: 0.3rem 0.65rem;
+  border: 1px solid var(--color-bg-tertiary);
   border-radius: 999px;
   font-size: 0.7rem;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease;
   list-style: none;
 }
 
 article:hover ul li {
-  background: var(--text-highlighted);
-  color: #fff;
+  border-color: var(--text-highlighted);
+  color: var(--text-highlighted);
 }
 
 /* =========================

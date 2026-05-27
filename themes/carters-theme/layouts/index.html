@@ -16,9 +16,9 @@
         {{ with .Site.Params.landing.partners }}
         {{ range . }}
         <p class="partner-link">
-          <a href="{{ .url }}" title="Partnered with {{ .name }}">
+          <a href="{{ .url }}" title="{{ .name }}">
             <img src="{{ .image }}" alt="{{ .name }}" class="partner-logo">
-            Partnered with {{ .name }}
+            {{ .name }}
           </a>
         </p>
         {{ end }}

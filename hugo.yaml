@@ -67,9 +67,13 @@ params:
       url: "/posts/about_me/"
 
     partners:
-      - name: "Proton VPN"
+      - name: "Partnered with Proton VPN"
         image: "/images/icons/proton_vpn.png"
         url: "https://go.getproton.me/SH27U"
+
+      - name: "wikiHow co-author and Tech Expert"
+        image: "/images/icons/wikihow.png"
+        url: "https://www.wikihow.com/Author/Carter-Keel"
 
     featuredProjects:
       - "youtube-channel"
